@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @event.title %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @event.body %>
+</p>
+
+<p>
+  <strong>Start date:</strong>
+  <%= @event.start_date %>
+</p>
+
+<p>
+  <strong>End date:</strong>
+  <%= @event.end_date %>
+</p>
+
+  <% if user_signed_in? && current_user.id == @event.user_id %>
+    <%= link_to 'Edit', edit_event_path(@event) %> 
+  <% end %>
+
+ <hr> 
+ <div class="comments">
+      <h4>＜All comments＞</h4>
+      <% if @comments %>
+        <% @comments.each do |comment| %>
+          <p>
+            <strong><%= link_to comment.user.name, "/users/#{comment.user_id}" %>：</strong>
+            <%= comment.text %>
+          </p>
+        <% end %>
+      <% end %>
+    </div>
+
+
+  <div class="container">
+    <% if current_user %>
+      <%= form_with(model: [@event, @comment], local: true) do |form| %>
+        <%= form.text_area :text, placeholder: "Let's comment!!", rows: "2" %>
+        <%= form.submit "SEND" %>
+      <% end %>
+    <% end %>
+  </div>
+
+<%= link_to 'Back', events_path %>
