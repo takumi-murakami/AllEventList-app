@@ -36,8 +36,38 @@ h1 span {
 
 header {
   display: flex;
-  padding: 0 16px;
+  padding: 0;
+  justify-content: space-between;
   margin-bottom: 20px;
+}
+
+.report-header {
+  margin-right: 90px;
+}
+
+.report-header a:hover {
+  background-color: rgb(240, 240, 232);
+}
+
+.report-header span {
+  color: rgb(58, 179, 108);
+  text-decoration: none;
+}
+
+#snippet {
+  font-size: 25px;
+  line-height: 73px;
+  cursor: pointer;
+  position: absolute;
+}
+
+#snippet:hover {
+  font-size: 35px;
+  line-height: 73px;
+  cursor: pointer;
+  margin-bottom: 80px;
+  background-color: rgb(240, 240, 232);
+  transition: font-size 0.1s;
 }
 
 .alert-header {
@@ -54,6 +84,7 @@ header {
   line-height: 73px;
   cursor: pointer;
   margin-bottom: 80px;
+  position: absolute;
 }
 
 #alert:hover {
@@ -218,7 +249,7 @@ header {
 
 .tabbar-header {
   display: block;
-  margin-right: auto;
+  margin-right: 30px;
   font-size: 15px;
   line-height: 18px;
   color: #333;
