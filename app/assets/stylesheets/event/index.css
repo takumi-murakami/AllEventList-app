@@ -42,7 +42,7 @@ header {
 }
 
 .report-header {
-  margin-right: 90px;
+  width: 10vw;
 }
 
 .report-header a:hover {
@@ -71,7 +71,7 @@ header {
 }
 
 .alert-header {
-  margin-right: 50px;
+  width: 10vw;
 }
 
 .alert-header span {
@@ -388,6 +388,17 @@ header {
   display: none; 
 }
 
+.event-btn {
+  text-decoration: none;
+  font-weight: bold;
+  color: #333;
+}
+
+.event-btn:hover {
+  opacity: 0.4;
+  background-color: rgb(228, 224, 224);
+  color: #333;
+}
 
 .footer {
   background-color: rgb(165, 172, 172);

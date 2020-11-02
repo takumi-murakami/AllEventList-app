@@ -127,7 +127,6 @@
   <thead class="schedule-thead">
     <tr>
       <th class="caption caption-title">Title</th>
-      <%# <th class="caption caption-body">Body</th> %>
       <th class="caption">Start date</th>
       <th class="caption">End date</th>
       <th class="caption">Post user</th>
@@ -140,14 +139,13 @@
       <% if @date <= event.start_date %>
         <tr>
           <td><%= event.title %></td>
-          <%# <td class="content-body"><%= event.body %></td>
           <td><%= event.start_date.to_s(:datetime_jp) %></td>
           <td><%= event.end_date.to_s(:datetime_jp) %></td>
           <td><%= event.user.name %></td>
-          <td><%= link_to '詳細', event %></td>
+          <td><%= link_to '詳細', event, class:"event-btn" %></td>
           <% if current_user.id == event.user.id %>
-            <td><%= link_to '編集', edit_event_path(event) %></td>
-            <td><%= link_to '削除', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            <td><%= link_to '編集', edit_event_path(event), class:"event-btn"  %></td>
+            <td><%= link_to '削除', event, class:"event-btn", method: :delete, data: { confirm: 'Are you sure?' } %></td>
           <% end %>
         </tr>
       <% end %>

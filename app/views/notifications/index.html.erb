@@ -1,5 +1,8 @@
-<h3 class="text-center">通知</h3>
-    <%= link_to "通知削除", notification_path(@notifications), method: :delete ,class: "fas fa-trash" %>
+<h3 class="text-center">
+    Notifications
+    <span class="notification-span">(コメント通知)</span>
+</h3>
+    <%= link_to "Delete notification", notification_path(@notifications), method: :delete ,class: "fas fa-trash" %>
     <hr>
 <% if @notifications.exists? %>
     <div class="users-index">
@@ -9,4 +12,6 @@
     <p>通知はありません</p>
 <% end %>
 <hr>
-<%= link_to "return Top", root_path %>
+<div class="actions report-return">
+  <%= link_to "return Top", root_path, class: "return-top" %>
+</div>

@@ -1,0 +1,24 @@
+.output-header {
+  font-size: 17px;
+}
+
+.output-header-span {
+  font-size: 13px;
+}
+
+.output-submit {
+  font-size: 17px;
+  font-family: 'Abril Fatface', cursive;
+  border-radius: 4px;
+  border-width: 1px;
+  cursor: pointer;
+  color: #333;
+}
+
+.output-submit:hover {
+  opacity: 0.4;
+}
+
+.notification-view {
+  margin: 15px 0;
+}

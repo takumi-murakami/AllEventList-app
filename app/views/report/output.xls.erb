@@ -89,16 +89,11 @@
     <Cell ss:StyleID="s71"><PhoneticText
       xmlns="urn:schemas-microsoft-com:office:excel"></PhoneticText><Data
       ss:Type="String"><%= e.body %></Data></Cell>
-    <Cell ss:StyleID="s72"><Data ss:Type="DateTime"><%= e.start_date %></Data></Cell>
-    <Cell ss:StyleID="s72"><Data ss:Type="DateTime"><%= e.end_date %></Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String"><%= e.start_date.to_s %></Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String"><%= e.end_date.to_s %></Data></Cell>
     <Cell ss:StyleID="s71"><Data ss:Type="String"><%= e.user.name %></Data></Cell>
    </Row>
   <% end %>
-
-   <Row ss:Index="11">
-    <Cell><PhoneticText xmlns="urn:schemas-microsoft-com:office:excel"></PhoneticText><Data
-      ss:Type="String">計○件</Data></Cell>
-   </Row>
   </Table>
   <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
    <PageSetup>
