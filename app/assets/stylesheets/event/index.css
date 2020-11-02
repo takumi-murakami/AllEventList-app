@@ -1,3 +1,7 @@
+.body {
+  background-color: rgb(240, 240, 232);
+}
+
 h1 span {
   border: 1px solid rgb(118, 119, 226);
   border-radius: 4px;
@@ -57,7 +61,7 @@ header {
   line-height: 73px;
   cursor: pointer;
   margin-bottom: 80px;
-  background-color: white;
+  background-color: rgb(240, 240, 232);
   transition: font-size 0.1s;
 }
 
@@ -110,8 +114,10 @@ header {
 
 .overlay.show li a:hover {
   font-family: 'Abril Fatface', cursive;
+  font-size: 15px;
   text-decoration: none;
-  background-color: rgb(197, 198, 235);
+  background-color: white;
+  color: #333;
   padding: 3px;
 }
 
