@@ -59,19 +59,26 @@ thead th {
   font-family: 'Abril Fatface', cursive;
   text-decoration: none;
   font-size: 14px;
-  border: 1px solid rgb(118, 119, 226);
-  background-color: rgb(197, 198, 235);
+  border-width: 1px;
+  border-style: outset;
+  border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  border-image: initial;
+  background-color: -internal-light-dark(rgb(239, 239, 239), rgb(59, 59, 59));
+  color: -internal-light-dark(black, white);
   border-radius: 4px;
   padding: 5px;
   cursor: pointer;
+  user-select: none;
 }
 
 .return-top:hover {
   opacity: 0.7;
-  font-size: 16px;
-  color: #333;
-  background-color: rgb(197, 198, 235);
-  transition: opacity 0.4s;
+  color: #666;
+  background-color: rgb(240, 240, 232);
+}
+
+.report-return {
+  margin-top: 50px;
 }
 
 .user-name {

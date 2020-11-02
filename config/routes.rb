@@ -6,5 +6,9 @@ Rails.application.routes.draw do
   end
   resources :users
   resources :notifications, only: [:index, :destroy]
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  
+  controller :report do
+    get 'report' => 'report#index', as: :report
+    get 'report/output', as: :output_report
+  end
 end

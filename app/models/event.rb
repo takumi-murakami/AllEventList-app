@@ -2,6 +2,7 @@ class Event < ApplicationRecord
   belongs_to :user
   has_many :comments
   has_many :notifications, dependent: :destroy
+  has_many :reports
 
 
   def create_notification_comment!(current_user, comment_id)

@@ -36,12 +36,42 @@ h1 span {
 
 header {
   display: flex;
-  padding: 0 16px;
+  padding: 0;
+  justify-content: space-between;
   margin-bottom: 20px;
 }
 
+.report-header {
+  width: 10vw;
+}
+
+.report-header a:hover {
+  background-color: rgb(240, 240, 232);
+}
+
+.report-header span {
+  color: rgb(58, 179, 108);
+  text-decoration: none;
+}
+
+#snippet {
+  font-size: 25px;
+  line-height: 73px;
+  cursor: pointer;
+  position: absolute;
+}
+
+#snippet:hover {
+  font-size: 35px;
+  line-height: 73px;
+  cursor: pointer;
+  margin-bottom: 80px;
+  background-color: rgb(240, 240, 232);
+  transition: font-size 0.1s;
+}
+
 .alert-header {
-  margin-right: 50px;
+  width: 10vw;
 }
 
 .alert-header span {
@@ -54,6 +84,7 @@ header {
   line-height: 73px;
   cursor: pointer;
   margin-bottom: 80px;
+  position: absolute;
 }
 
 #alert:hover {
@@ -218,7 +249,7 @@ header {
 
 .tabbar-header {
   display: block;
-  margin-right: auto;
+  margin-right: 30px;
   font-size: 15px;
   line-height: 18px;
   color: #333;
@@ -357,6 +388,17 @@ header {
   display: none; 
 }
 
+.event-btn {
+  text-decoration: none;
+  font-weight: bold;
+  color: #333;
+}
+
+.event-btn:hover {
+  opacity: 0.4;
+  background-color: rgb(228, 224, 224);
+  color: #333;
+}
 
 .footer {
   background-color: rgb(165, 172, 172);
