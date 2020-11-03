@@ -20,9 +20,10 @@
 #   <<: *default
 #   database: db/test.sqlite3
 
-# production:
-#   <<: *default
-#   database: db/production.sqlite3
+production:
+  <<: *default
+  # database: db/production.sqlite3
+  database: all_event_list_app_production
   username: root
   password: <%= ENV['DATABASE_PASSWORD'] %>
   socket: /var/lib/mysql/mysql.sock
@@ -32,7 +33,7 @@ default: &default
   encoding: utf8
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   username: root
-  password:
+  password: 
   socket: /tmp/mysql.sock
 
 development:
