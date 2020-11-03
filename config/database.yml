@@ -22,8 +22,7 @@
 
 production:
   <<: *default
-  # database: db/production.sqlite3
-  database: all_event_list_app_production
+  database:
   username: root
   password: <%= ENV['DATABASE_PASSWORD'] %>
   socket: /var/lib/mysql/mysql.sock
