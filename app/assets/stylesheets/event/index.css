@@ -1,5 +1,6 @@
 .body {
   background-color: rgb(240, 240, 232);
+  /* background-color: rgb(131, 140, 150); */
 }
 
 h1 span {
@@ -22,6 +23,11 @@ h1 span {
   text-decoration: none;
   background-color: rgb(197, 198, 235);
   color: #666;
+}
+
+#calender-icon {
+  border: none;
+  display: none;
 }
 
 .now-status {
@@ -62,12 +68,12 @@ header {
 }
 
 #snippet:hover {
-  font-size: 35px;
+  font-size: 30px;
   line-height: 73px;
   cursor: pointer;
   margin-bottom: 80px;
   background-color: rgb(240, 240, 232);
-  transition: font-size 0.1s;
+  transition: font-size 0.2s;
 }
 
 .alert-header {
@@ -88,12 +94,12 @@ header {
 }
 
 #alert:hover {
-  font-size: 35px;
+  font-size: 30px;
   line-height: 73px;
   cursor: pointer;
   margin-bottom: 80px;
   background-color: rgb(240, 240, 232);
-  transition: font-size 0.1s;
+  transition: font-size 0.2s;
 }
 
 #on-alert {
@@ -291,6 +297,11 @@ header {
   opacity: 0.5;
   background-color: rgb(197, 198, 235);
   transition: opacity 0.4s;
+}
+
+#drop {
+  position: absolute;
+  font-size: 20px;
 }
 
 .content.active {

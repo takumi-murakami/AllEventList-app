@@ -1,1 +1,8 @@
-<h1><span class="title-icon"><%= link_to "AllEventsList", root_path, class: "icon-text" %></span></h1>
+<h1 class="main-title">
+  <span class="title-icon">
+    <%= link_to root_path, class: "icon-text" do %>
+      AllEventsList
+      <span class="material-icons" id="calender-icon">perm_contact_calendar</span>
+    <% end %>
+  </span>
+</h1>
