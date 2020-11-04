@@ -7,6 +7,7 @@ class EventsController < ApplicationController
     @user = User.all
     require 'date'
     @date = DateTime.now
+    @notification = Notification.all
   end
 
   def show

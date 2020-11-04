@@ -64,6 +64,8 @@
           <br>
           ...コメントはトップページのアラートボタンに通知されます。
           <br>
+          ...未読のコメントがある場合、赤い点がつきます。
+          <br>
           <br>
           2. 住所検索機能を追加いたしました。
           <br>
@@ -98,22 +100,25 @@
     <% end %>
   </div>
 
-  <div class="report-header">
-    <%= link_to report_path do%>
-      <span class="material-icons" id="snippet">text_snippet</span>
-    <% end %>
-  </div>
+  <% if user_signed_in? %>
+    <div class="report-header">
+      <%= link_to report_path do%>
+        <span class="material-icons" id="snippet">text_snippet</span>
+      <% end %>
+    </div>
 
-  <div class="alert-header">
-
-    <%= link_to notifications_path do %>
-      <span class="material-icons" id="alert">notification_important</span>
-      <%# <% if unchecked_notifications.any? %> 
-        <%# <span class="material-icons" id="on-alert">fiber_manual_record</span> %>
-      <%# <% end %>  
-    <% end %>
-
-  </div>
+    <div class="alert-header">
+      <%= link_to notifications_path do %>
+        <span class="material-icons" id="alert">notification_important</span> 
+        <% @notification.each do |notification| %>
+          <% if (notification.visited_id == current_user.id) && notification.checked == false %>
+            <span class="material-icons" id="on-alert">fiber_manual_record</span>
+            <% break %>
+          <% end %>
+        <% end %>
+      <% end %>
+    </div>
+  <% end %>
 
   <div class="navbar-header">
     <span class="material-icons" id="open">menu</span>
@@ -179,7 +184,5 @@
     <% end %>
   <% end %>
 </div>
-
-<%# <br> %>
 
 <%= render "shared/footer" %>

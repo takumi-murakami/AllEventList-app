@@ -103,7 +103,9 @@ header {
 }
 
 #on-alert {
-  font-size: 20px;
+  font-size: 10px;
+  padding-left: 7px;
+  color: rgb(245, 12, 12);
 }
 
 .navbar-header {
@@ -353,6 +355,7 @@ header {
 
 .information {
   font-size: 12px;
+  font-weight: bold;
 }
 
 .grad-btn {
@@ -372,7 +375,7 @@ header {
   overflow: hidden;
   height: 80px; 
   font-size: 12px;
-  color: rgb(233, 109, 109);
+  color: rgb(235, 134, 134);
   font-weight: bold;
 }
 .grad-item::before {
