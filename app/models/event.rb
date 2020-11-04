@@ -4,6 +4,9 @@ class Event < ApplicationRecord
   has_many :notifications, dependent: :destroy
   has_many :reports
 
+  with_options presence: true do
+    validates :title
+  end
 
   def create_notification_comment!(current_user, comment_id)
     #同じ投稿にコメントしているユーザーに通知を送る。（current_userと投稿ユーザーのぞく）
