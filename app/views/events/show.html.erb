@@ -1,32 +1,38 @@
 <p id="notice"><%= notice %></p>
 
+<h1 class="show-event-title">Show Event</h1>
+
 <p>
   <strong>Title:</strong>
   <%= @event.title %>
 </p>
 
-<p>
+<br>
+
+<p class="show-event-body">
   <strong>Body:</strong>
+  <br>
+  <br>
   <%= @event.body %>
 </p>
-
+<br>
 <p>
   <strong>Start date:</strong>
   <%= @event.start_date %>
 </p>
-
 <p>
   <strong>End date:</strong>
   <%= @event.end_date %>
 </p>
 
+  <br>
   <% if user_signed_in? && current_user.id == @event.user_id %>
-    <%= link_to 'Edit', edit_event_path(@event) %> 
+    <%= link_to 'Edit', edit_event_path(@event), class:"show-event-btn edit-btn" %> 
   <% end %>
 
- <hr> 
+ <hr class="line"> 
  <div class="comments">
-      <h4>＜All comments＞</h4>
+      <h4 class="comment-field">＜All comments＞</h4>
       <% if @comments %>
         <% @comments.each do |comment| %>
           <p>
@@ -40,11 +46,13 @@
 
   <div class="container">
     <% if current_user %>
-      <%= form_with(model: [@event, @comment], local: true) do |form| %>
-        <%= form.text_area :text, placeholder: "Let's comment!!", rows: "2" %>
+      <%= form_with(model: [@event, @comment], local: true, class:"comment-form") do |form| %>
+        <%= form.text_area :text, placeholder: "Let's comment!!", rows: "2", class:"comment-form-area" %>
         <%= form.submit "SEND" %>
       <% end %>
     <% end %>
   </div>
 
-<%= link_to 'Back', events_path %>
+<div class="return-actions">
+  <%= link_to "return Top", root_path, class: "return-top " %>
+</div>

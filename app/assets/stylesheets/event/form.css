@@ -1,0 +1,146 @@
+.new-event-title {
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+
+.edit-event-title {
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+
+.show-event-title {
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+
+#event_title {
+  width: 300px;
+  border: 0;
+  padding: 10px;
+  font-size: 12px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  border: solid 1px #ccc;
+  margin: 0 0 20px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+#event_body {
+  width: 500px;
+  height: 100px;
+  border: 0;
+  padding: 10px;
+  font-size: 12px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  border: solid 1px #ccc;
+  margin: 0 0 20px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  text-align: start;
+  word-break: normal;
+}
+
+#event_start_date_1i, #event_start_date_2i, #event_start_date_3i, #event_start_date_4i, #event_start_date_5i {
+  border: 0;
+  padding: 10px;
+  font-size: 12px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  border: solid 1px #ccc;
+  margin: 0 0 20px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+#event_end_date_1i, #event_end_date_2i, #event_end_date_3i, #event_end_date_4i, #event_end_date_5i {
+  border: 0;
+  padding: 10px;
+  font-size: 12px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  border: solid 1px #ccc;
+  margin: 0 0 20px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+
+input[type="submit" i] {
+  font-family: 'Abril Fatface', cursive;
+  text-decoration: none;
+  font-size: 14px;
+  border-width: 1px;
+  border-style: outset;
+  border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  border-image: initial;
+  background-color: -internal-light-dark(rgb(239, 239, 239), rgb(59, 59, 59));
+  color: -internal-light-dark(black, white);
+  border-radius: 4px;
+  padding: 5px;
+  cursor: pointer;
+  user-select: none;
+  margin-bottom: 30px;
+}
+
+.show-event-btn {
+  font-family: 'Abril Fatface', cursive;
+  text-decoration: none;
+  font-size: 14px;
+  border-width: 1px;
+  border-style: outset;
+  border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  border-image: initial;
+  background-color: -internal-light-dark(rgb(239, 239, 239), rgb(59, 59, 59));
+  color: -internal-light-dark(black, white);
+  border-radius: 4px;
+  padding: 5px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.show-event-btn:hover {
+  opacity: 0.7;
+  color: #666;
+  background-color: rgb(240, 240, 232);
+}
+
+input[type="submit" i]:hover {
+  opacity: 0.6;
+}
+
+.comment-form-area {
+  width: 500px;
+  height: 100px;
+  border: 0;
+  padding: 10px;
+  font-size: 12px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  border: solid 1px #ccc;
+  margin: 0 0 20px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  text-align: start;
+  word-break: normal;
+}
+
+.line {
+  margin: 30px 0;
+  font-size: 1px;
+}
+
+.comment-field {
+  font-size: 17px;
+}
+
+.show-event-body {
+  max-width: 400px;
+}
+
