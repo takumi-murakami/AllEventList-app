@@ -1,18 +1,25 @@
 .body {
   background-color: rgb(240, 240, 232);
-  /* background-color: rgb(131, 140, 150); */
+}
+
+.main-title {
+  margin: 0;
+  width: 100%;
 }
 
 h1 span {
-  border: 1px solid rgb(118, 119, 226);
-  border-radius: 4px;
-  background-color: rgb(197, 198, 235);
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  top: 150px;
 }
 
 .title-icon {
-  /* font-family: 'Bangers', cursive; */
   font-family: 'Abril Fatface', cursive;
+  font-size: 70px;
   padding: 5px 12px;
+  margin: 0 auto;
+  text-shadow: -2px -3px 3px #808080;
 }
 
 .icon-text {
@@ -21,7 +28,6 @@ h1 span {
 
 .icon-text:hover {
   text-decoration: none;
-  background-color: rgb(197, 198, 235);
   color: #666;
 }
 

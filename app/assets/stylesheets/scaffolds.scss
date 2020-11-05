@@ -23,13 +23,13 @@ a {
   color: #000;
 
   &:visited {
-    color: #666;
+    color: rgb(109, 105, 105);
   }
 
-  &:hover {
-    color: #fff;
-    background-color: #000;
-  }
+  // &:hover {
+  //   color: #fff;
+  //   background-color: #000;
+  // }
 }
 
 th {
