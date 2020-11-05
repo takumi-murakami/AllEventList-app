@@ -30,3 +30,19 @@
 # Ignore master key for decrypting credentials and more.
 /config/master.key
 /.env
+/db
+/lib
+/bin
+/config
+/log
+/public
+/storage
+/test
+/tmp
+/vender
+/.rspec
+/.config.ru
+/Gemfile
+/Gemile.lock
+/Rakefile
+/show
