@@ -1,24 +1,26 @@
-# README
+## All Event List
+===
+All Event Listは、カレンダーシェアを目的とする団体に向けて開発しました。
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Description
+※前提としてこのアプリケーションは、余分な機能を省き、より使いやすいアプリケーションを目指した為、一つのサーバーに対して、一つの団体が利用することを想定して開発されています。
+予定をシェアし、その予定に対してコメントをしたり、特定のユーザーの予定を確認する事ができます。
+さらに詳しい説明は下記を参照ください。
 
-Things you may want to cover:
+## Demo
 
-* Ruby version
+## Requirement
 
-* System dependencies
+## Usage
 
-* Configuration
+## Install
 
-* Database creation
+## Contribution
 
-* Database initialization
+## Licence
 
-* How to run the test suite
+<!-- [MIT](https://github.com/tcnksm/tool/blob/master/LICENCE) -->
 
-* Services (job queues, cache servers, search engines, etc.)
+## Author
 
-* Deployment instructions
-
-* ...
+<!-- [tcnksm](https://github.com/tcnksm) -->
