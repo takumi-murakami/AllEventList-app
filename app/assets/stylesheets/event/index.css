@@ -429,3 +429,46 @@ header {
   color: #fff;
   font-size: 10px;
 }
+
+
+@media (max-width: 599px) {
+  .tabbar-header {
+    margin-right: 15px;
+  }
+
+  .menubar li a{
+    width: 130px;
+    font-size: 12px;  
+  }
+
+  #drop {
+    display: none;
+  }
+
+  .content.active {
+    max-width: 390px;
+  }
+
+  .caption-title {
+    width: 48px;
+  }
+
+  .schedule-tbody td {
+    font-size: 8px;
+  }
+
+  .userpage-tbody td {
+    font-size: 8px;
+  }
+
+  .userpage-thead tr th:nth-child(1) {
+    width: 48px;
+  }
+  .userpage-thead tr th:nth-child(3) {
+    width: 107px;
+  }
+  .userpage-thead tr th:nth-child(4) {
+    width: 107px;
+  }
+  
+}
