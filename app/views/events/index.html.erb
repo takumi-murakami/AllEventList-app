@@ -2,7 +2,7 @@
 <p id="notice"><%= notice %></p>
 
   <% if user_signed_in? %>
-    <p class="now-status">You are currently login!!<br>Mr./Ms. <%= current_user.name %>&#x1f60a;</p>
+    <p class="now-status">You are currently login!!<br>Hello!! <%= current_user.name %>&#x1f60a;</p>
   <% else %>
     <p class="now-status empty-user">You must be login!!&#x1f622;</p>
   <% end %>
@@ -29,7 +29,7 @@
     <% if user_signed_in? %>
       <section class="content" id="about">
         <span class="material-icons" id="cancel-1">close_fullscreen</span>
-        <%= link_to 'MyScheduleList', user_path(current_user.id), class: "content-list" %>
+        <%= link_to 'MyEventList', user_path(current_user.id), class: "content-list" %>
       </section>
       <section class="content" id="service">
         <span class="material-icons" id="cancel-2">close_fullscreen</span>
