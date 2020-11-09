@@ -35,3 +35,14 @@
 
 ## Requirement
 
+* Ruby 2.6.5
+* RubyOnRails 5.2.4
+* HTML
+* CSS
+* JavaScript
+
+__RubyGems__
+* <https://rubygems.org/gems/jquery-rails>
+* <https://rubygems.org/gems/fullcalendar-rails>
+* <https://rubygems.org/gems/momentjs-rails>
+* <https://rubygems.org/gems/jbuilder>
