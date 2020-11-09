@@ -3,8 +3,7 @@
 <p align="center">
 <a href="http://52.193.178.253/"><img src="https://user-images.githubusercontent.com/72126639/98492068-19415a80-227a-11eb-8145-ff3575b3ee82.png" height="200px;" /></a>
 <br>
-予定(カレンダー)シェア専用アプリケーション  
-Schedule share dedicated application
+予定(カレンダー)シェア専用アプリケーション / Schedule share dedicated application
 </p>
 
 <hr>
@@ -18,7 +17,8 @@ Schedule share dedicated application
 	
 	
 予定をシェアし、複数のユーザーが予定に対してコメントをしたり、特定のユーザーのマイページにて予定を確認する事ができます。  
-
+<br>
+<br>
 As a premise, this application is developed assuming that one organization will use it for one server because it aims to be an application that can be handled more intuitively by omitting extra functions.  
 
 * As the definition of extra functions, the following functions that cannot be operated intuitively by the user are assumed.  
