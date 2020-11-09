@@ -13,8 +13,6 @@ All Event Listは、カレンダーシェアを目的とする団体に向けて
 <<<<<<< Updated upstream
 [![Image from Gyazo](https://i.gyazo.com/13f910a3b5f99f2d64931a7b016ef5b3.gif)](https://gyazo.com/13f910a3b5f99f2d64931a7b016ef5b3)
 =======
-![All Event List](https://d.kuku.lu/f4da4393e0)
->>>>>>> Stashed changes
 
 ## Requirement
 
