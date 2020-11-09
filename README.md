@@ -60,10 +60,9 @@ __RubyGems__
 ## 📄Design document columns
 
 <p align="center">
-  <img src="https://i.gyazo.com/a4772963e265a1641ce3bc2866f0ddbc.png" height="300px;" />
+  <img src="https://i.gyazo.com/a4772963e265a1641ce3bc2866f0ddbc.png" height="450px;" />
 </p>
 <br>
-
 ### users テーブル
 
 | Column             | Type    | Options     |
@@ -130,3 +129,4 @@ __RubyGems__
 | ---------- | ---------- | ----------- |
 
 - belongs_to :event
+
