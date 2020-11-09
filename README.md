@@ -23,7 +23,7 @@ All Event Listは、カレンダーシェアを目的とする団体に向けて
 
 ## Demo
 <p align="center">
-  <img src="https://i.gyazo.com/40584bf7ddf948b1e7e94cab09cbc2a4.gif" height="510px;" />
+  <img src="https://i.gyazo.com/40584bf7ddf948b1e7e94cab09cbc2a4.gif" height="450px;" />
 </p>
 <br>
 
@@ -32,7 +32,7 @@ All Event Listは、カレンダーシェアを目的とする団体に向けて
 </p>
 
 <p align="center">
-<img src="https://i.gyazo.com/ea44e602cbab8b211fa7a3df95b1b21b.jpg" height="170px;" >  <img src="https://i.gyazo.com/c5c9389d2e9f434d35a0a4c412eda777.gif"  height="170px;" >  <img src="https://i.gyazo.com/191a57eed7d221e222e7c6da449d67b5.png"  height="170px;" >
+<img src="https://i.gyazo.com/ea44e602cbab8b211fa7a3df95b1b21b.jpg" height="150px;" >  <img src="https://i.gyazo.com/c5c9389d2e9f434d35a0a4c412eda777.gif"  height="150px;" >  <img src="https://i.gyazo.com/191a57eed7d221e222e7c6da449d67b5.png"  height="150px;" >
 </p>
 
 ## Requirement
