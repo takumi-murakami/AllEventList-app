@@ -1,9 +1,7 @@
 ## All Event List
-<p align="center">
-  <a href="http://52.193.178.253/"><img src="https://user-images.githubusercontent.com/72126639/98492068-19415a80-227a-11eb-8145-ff3575b3ee82.png" height="150px;" /></a>
+<a href="http://52.193.178.253/"><img src="https://user-images.githubusercontent.com/72126639/98492068-19415a80-227a-11eb-8145-ff3575b3ee82.png" height="150px;" /></a>
 <br>
 All Event Listは、カレンダーシェアを目的とする団体に向けて開発しました。
-</p>
 
 ## Description
 
