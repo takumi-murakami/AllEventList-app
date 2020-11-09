@@ -17,7 +17,9 @@ All Event Listは、カレンダーシェアを目的とする団体に向けて
 <http://52.193.178.253/>
 
 ## Demo
-![AllEventList](https://i.gyazo.com/13f910a3b5f99f2d64931a7b016ef5b3.gif)
+<p align="center">
+  <img src="https://i.gyazo.com/13f910a3b5f99f2d64931a7b016ef5b3.gif" height="150px;" />
+</p>
 
 ## Requirement
 
