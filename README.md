@@ -3,7 +3,8 @@
 <p align="center">
 <a href="http://52.193.178.253/"><img src="https://user-images.githubusercontent.com/72126639/98492068-19415a80-227a-11eb-8145-ff3575b3ee82.png" height="200px;" /></a>
 <br>
-予定(カレンダー)シェア専用アプリケーション
+予定(カレンダー)シェア専用アプリケーション  
+Schedule share dedicated application
 </p>
 
 <hr>
@@ -18,6 +19,12 @@
 	
 予定をシェアし、複数のユーザーが予定に対してコメントをしたり、特定のユーザーのマイページにて予定を確認する事ができます。  
 
+As a premise, this application is developed assuming that one organization will use it for one server because it aims to be an application that can be handled more intuitively by omitting extra functions.  
+
+* As the definition of extra functions, the following functions that cannot be operated intuitively by the user are assumed.  
+1. room creation function  
+
+You can share an appointment, multiple users can comment on the appointment, and you can check the appointment on My Page of a specific user.
 <hr>
 
 ## 🌐App URL
