@@ -23,7 +23,7 @@ All Event Listは、カレンダーシェアを目的とする団体に向けて
 <br>
 
 <p align="center">
-# MyPage / Output / Notifications
+ 👔MyPage / 📎Output / 🛎Notifications
 </p>
 
 <p align="center">
