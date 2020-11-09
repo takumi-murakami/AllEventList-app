@@ -18,7 +18,12 @@ All Event Listは、カレンダーシェアを目的とする団体に向けて
 
 ## Demo
 <p align="center">
-  <img src="https://i.gyazo.com/40584bf7ddf948b1e7e94cab09cbc2a4.gif" height="300px;" />
+  <img src="https://i.gyazo.com/40584bf7ddf948b1e7e94cab09cbc2a4.gif" height="500px;" />
+</p>
+<br>
+
+<p align="center">
+# MyPage / Output / Notifications
 </p>
 
 <p align="center">
