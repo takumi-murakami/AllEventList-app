@@ -35,37 +35,3 @@ All Event Listは、カレンダーシェアを目的とする団体に向けて
 
 ## Requirement
 
-## Usage
-
-## Install
-
-## Contribution
-
-## Licence
-
-
-
-<style type="text/css">
-	.area {
-		/* boxレイアウトの指定 */
-		display: box;
-		display: -webkit-box;
-		display: -moz-box;
-
-		/* 配置したボックスを左右中央寄せにする */
-		box-pack: center;
-		-webkit-box-pack: center;
-		-moz-box-pack: center;
-
-		<!-- border: 1px solid #ccc; -->
-		<!-- border-radius: 5px; -->
-	}
-	.item {
-		width: 50px;
-		height: 20px;
-		font-size: 50px;
-		
-		text-align: center;
-		color: #444;
-		margin: 10px;
-	}
