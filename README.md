@@ -1,5 +1,4 @@
 ## All Event List
-===
 All Event Listは、カレンダーシェアを目的とする団体に向けて開発しました。
 
 ## Description
