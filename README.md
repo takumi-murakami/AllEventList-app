@@ -10,7 +10,11 @@ All Event Listは、カレンダーシェアを目的とする団体に向けて
 [![logo image](https://user-images.githubusercontent.com/72126639/98492068-19415a80-227a-11eb-8145-ff3575b3ee82.png "AllEventList!!")](http://52.193.178.253/)
 
 ## Demo
+<<<<<<< Updated upstream
 [![Image from Gyazo](https://i.gyazo.com/13f910a3b5f99f2d64931a7b016ef5b3.gif)](https://gyazo.com/13f910a3b5f99f2d64931a7b016ef5b3)
+=======
+![All Event List](https://d.kuku.lu/f4da4393e0)
+>>>>>>> Stashed changes
 
 ## Requirement
 
