@@ -53,3 +53,74 @@ __RubyGems__
 * <https://rubygems.org/gems/fullcalendar-rails>
 * <https://rubygems.org/gems/momentjs-rails>
 * <https://rubygems.org/gems/jbuilder>
+
+<hr>
+
+## 📄Design document columns
+
+### users テーブル
+
+| Column             | Type    | Options     |
+| ------------------ | ------- | ----------- |
+| name               | string  | null: false |
+| email              | string  | null: false |
+| password           | string  | null: false |
+
+
+- has_many :events
+- has_many :comments
+- has_many :notifications
+
+
+### events テーブル
+
+| Column     | Type       | Options     |
+| ---------- | ---------- | ----------- |
+| title      | string     | null: false |
+| body       | string     | null: false |
+| start_date | datetime   | null: false |
+| end_date   | datetime   | null: false |
+| user_id    | references | null: false |
+
+
+- belongs_to :user
+- has_many :comments
+- has_many :notifications
+- has_many :reports
+
+
+### comments テーブル
+
+| Column   | Type       | Options     |
+| -------- | ---------- | ----------- |
+| text     | text       | null: false |
+| user_id  | references | null: false |
+| event_id | references | null: false |
+
+
+- belongs_to :user
+- belongs_to :event
+- has_many :notifications
+
+
+### notifications テーブル
+
+| Column     | Type       | Options     |
+| ---------- | ---------- | ----------- |
+| visitor    | referendes | null: false |
+| visited    | references | null: false |
+| event_id   | references | null: false |
+| comment_id | references | null: false |
+| checked    | boolean    | null: false |
+
+
+- belongs_to :user
+- belongs_to :event
+
+
+### reports テーブル
+
+| Column     | Type       | Options     |
+| ---------- | ---------- | ----------- |
+
+- belongs_to :event
