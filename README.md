@@ -1,9 +1,10 @@
 <img src="https://img.shields.io/github/issues/takumi-murakami/AllEventList-app">  <img src="https://img.shields.io/github/forks/takumi-murakami/AllEventList-app">  <img src="https://img.shields.io/github/stars/takumi-murakami/AllEventList-app">
 
-
-<a href="http://52.193.178.253/"><img src="https://user-images.githubusercontent.com/72126639/98492068-19415a80-227a-11eb-8145-ff3575b3ee82.png" height="150px;" /></a>
+<p align="center">
+<a href="http://52.193.178.253/"><img src="https://user-images.githubusercontent.com/72126639/98492068-19415a80-227a-11eb-8145-ff3575b3ee82.png" height="200px;" /></a>
 <br>
 予定(カレンダー)シェア専用アプリケーション
+</p>
 
 <hr>
 
