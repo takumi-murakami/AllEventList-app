@@ -18,7 +18,7 @@ All Event Listは、カレンダーシェアを目的とする団体に向けて
 
 ## Demo
 <p align="center">
-  <img src="https://i.gyazo.com/40584bf7ddf948b1e7e94cab09cbc2a4.gif" height="500px;" />
+  <img src="https://i.gyazo.com/40584bf7ddf948b1e7e94cab09cbc2a4.gif" height="300px;" />
 </p>
 <div class="area">
 	<div class="item">  <img src="https://i.gyazo.com/ea44e602cbab8b211fa7a3df95b1b21b.jpg"  ></div>
@@ -54,9 +54,9 @@ All Event Listは、カレンダーシェアを目的とする団体に向けて
 		<!-- border-radius: 5px; -->
 	}
 	.item {
-		width: 100px;
+		width: 50px;
 		height: 20px;
-		font-size: 60px;
+		font-size: 50px;
 		
 		text-align: center;
 		color: #444;
