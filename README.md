@@ -34,7 +34,7 @@ You can share an appointment, multiple users can comment on the appointment, and
 
 ## 💻Demo
 <p align="center">
-  <img src="https://i.gyazo.com/40584bf7ddf948b1e7e94cab09cbc2a4.gif" height="450px;" />
+  <img src="https://i.gyazo.com/40584bf7ddf948b1e7e94cab09cbc2a4.gif" height="400px;" />
 </p>
 <br>
 
