@@ -64,7 +64,7 @@ __RubyGems__
 
 <hr>
 
-## 📄Design document columns
+## 📄Database design
 
 <p align="center">
   <img src="https://i.gyazo.com/a4772963e265a1641ce3bc2866f0ddbc.png" height="450px;" />
