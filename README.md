@@ -39,8 +39,8 @@ pass: murakami
 
 <details><summary>テスト用ログインアカウント</summary><div>
 
-email: test@g.com  
-pass: test5656
+email: test@mail.com  
+pass: test1234
 
 </div></details>
 
