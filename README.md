@@ -30,7 +30,7 @@ You can share an appointment, multiple users can comment on the appointment, and
 ## 🌐App URL
 <http://52.193.178.253/>
 
-<details><summary>ユーザー認証キー</summary><div>
+<details><summary>ユーザー認証</summary><div>
 
 id: murakamidemo  
 pass: murakami
