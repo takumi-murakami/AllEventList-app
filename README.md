@@ -30,10 +30,17 @@ You can share an appointment, multiple users can comment on the appointment, and
 ## 🌐App URL
 <http://52.193.178.253/>
 
-<details><summary>ユーザー認証</summary><div>
+<details><summary>ユーザー認証あり</summary><div>
 
 id: murakamidemo  
 pass: murakami
+
+</div></details>
+
+<details><summary>テスト用ログインアカウント</summary><div>
+
+email: test@g.com  
+pass: test5656
 
 </div></details>
 
