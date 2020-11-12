@@ -1,0 +1,27 @@
+
+.event_search {
+  margin-top: 35px;
+  line-height: 10px;
+}
+
+#q_title_eq {
+  width: 300px;
+  border: 0;
+  padding: 8px;
+  font-size: 12px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  border: solid 1px #ccc;
+  margin: 0 0 20px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+#search_data {
+  margin: 0;
+}
+
+#search_return {
+  margin-top: 25px;
+}

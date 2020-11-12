@@ -1,0 +1,37 @@
+<h3>
+Search Result
+</h3>
+
+<table class="schedule-table">
+  <thead class="schedule-thead">
+    <tr>
+      <th class="caption caption-title">Title</th>
+      <th class="caption">Start date</th>
+      <th class="caption">End date</th>
+      <th class="caption">Post user</th>
+      <th class="caption" colspan="3">Button</th>
+    </tr>
+  </thead>
+
+  <tbody class="schedule-tbody">
+    <% if @results.length !=0 %>
+      <% @results.each do |result| %>
+        <tr>
+          <td><%= result.title %></td>
+          <td><%= result.start_date.to_s(:datetime_jp) %></td>
+          <td><%= result.end_date.to_s(:datetime_jp) %></td>
+          <td><%= result.user.name %></td>
+          <td><%= link_to '詳細', event_path(@events), class:"event-btn" %></td>
+          <%# <% if current_user.id == @events.user.id %> 
+            <td><%= link_to '編集', edit_event_path(@events), class:"event-btn"  %></td>
+            <td><%= link_to '削除', event_path(@events), class:"event-btn", method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          <%# <% end %> 
+        </tr>
+      <% end %>
+    <% end %>
+  </tbody>
+</table>
+
+<div class="actions">
+  <%= link_to "return Top", root_path, class: "return-top" %>
+</div>

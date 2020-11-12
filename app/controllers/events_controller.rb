@@ -10,6 +10,7 @@ class EventsController < ApplicationController
     @date = DateTime.now
     @notification = Notification.all
     set_event_column
+    set_user_column
   end
 
   def show
@@ -62,7 +63,8 @@ class EventsController < ApplicationController
   end
 
   def search
-    @results = @p.result.includes(:user)
+    @results = @e.result.includes(:user)
+    @events = Event.all.order(start_date: "ASC")
   end
 
   private
@@ -77,8 +79,10 @@ class EventsController < ApplicationController
 
     def set_event_column
       @event_title = Event.select("title").distinct
-      @event_start_date = Event.select("start_date").distinct
-      @event_end_date = Event.select("end_date").distinct
+    end
+
+    def set_user_column
+      @user_name = User.select("name").distinct
     end
 
     def event_params
