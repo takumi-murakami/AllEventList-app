@@ -140,9 +140,16 @@
     </ul>
 </div>
 
-  <% if user_signed_in? %>
-    <div id="calendar"></div>
-  <% end %>
+<% if user_signed_in? %>
+  <div id="calendar"></div>
+
+  <div class="search-schedule">
+    <%= search_form_for @e, url: events_search_path do |f| %>
+      <%= f.collection_select :title_eq, @events, :title, :title, include_blank: ' ', class:"search-title" %>
+      <%= f.submit 'Search!', id:"search_data" %>
+    <% end %>
+  </div>
+<% end %>
 
 <table class="schedule-table">
   <% if user_signed_in? %>

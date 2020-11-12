@@ -1,6 +1,7 @@
 class EventsController < ApplicationController
   before_action :authenticate_user!, except: :index
   before_action :set_event, only: [:show, :edit, :update, :destroy]
+  before_action :search_event, only: [:index, :search]
 
   def index
     @events = Event.all.order(start_date: "ASC")
@@ -8,6 +9,8 @@ class EventsController < ApplicationController
     require 'date'
     @date = DateTime.now
     @notification = Notification.all
+    set_event_column
+    set_user_column
   end
 
   def show
@@ -59,12 +62,28 @@ class EventsController < ApplicationController
     end
   end
 
+  def search
+    @results = @e.result.includes(:user)
+    @events = Event.all.order(start_date: "ASC")
+  end
+
   private
 
     def set_event
       @event = Event.find(params[:id])
     end
 
+    def search_event
+      @e = Event.ransack(params[:q])  
+    end
+
+    def set_event_column
+      @event_title = Event.select("title").distinct
+    end
+
+    def set_user_column
+      @user_name = User.select("name").distinct
+    end
 
     def event_params
       params.require(:event).permit(:title, :body, :start_date, :end_date).merge(user_id: current_user.id)
