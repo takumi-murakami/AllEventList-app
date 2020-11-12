@@ -26,6 +26,9 @@ Search Result
           <% if current_user.id == result.user.id %> 
             <td><%= link_to '編集', edit_event_path(result.id), class:"event-btn"  %></td>
             <td><%= link_to '削除', event_path(result.id), class:"event-btn", method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          <% else %>
+            <td><a class="event-btn">-</a>
+            <td><a class="event-btn">-</a>
           <% end %>  
         </tr>
       <% end %>
