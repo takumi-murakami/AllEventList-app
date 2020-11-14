@@ -11,18 +11,28 @@
 ## &#x1f58a;Description
 
 __前提__  
-このアプリケーションは、ユーザーが直感的に扱えるアプリケーションを目指した為、  一つのサーバーに対して、一つの団体が利用することを想定して開発しました。  
-	
-__機能__
-* 予定をシェアし、複数のユーザーが予定に対してコメントをしたり、特定のユーザーのマイページにて予定を確認する事ができます。  
+本アプリケーションは、ユーザーが直感的に扱えるアプリケーションを目指した為、  一つのサーバーに対して、一つの団体が利用することを想定して開発しました。  
 <br>
+
+__内容__  
+(1)新規で予定を作成すると、トップページのカレンダーに追加されていくようになっています。これはサーバーに接続且つ、認証キーを知っているメンバー全員が確認できます。  
+(2)また作成した予定には、詳細確認、編集、削除、コメント、検索のそれぞれのアクションに対応しており、コメントがされた場合、トップページにてユーザーに知らせます。  
+(3)それぞれのマイページでは投稿した予定を一覧で取得し、必要であれば住所検索ができるようになっています。  
+(4)また全ての予定を、excel形式で出力する事も可能となっています。  
+
 <br>
-As a premise, this application is developed assuming that one organization will use it for one server because it aims to be an application that can be handled more intuitively by omitting extra functions.  
 
-* As the definition of extra functions, the following functions that cannot be operated intuitively by the user are assumed.  
-1. room creation function  
+__機能別一覧__
+* 予定の新規作成  
+* 予定の詳細確認  
+* 予定の編集・削除  
+* コメント  
+* 住所検索  
+* マイページ
+* コメント通知  
+* 帳票出力
+* 予定の検索
 
-You can share an appointment, multiple users can comment on the appointment, and you can check the appointment on My Page of a specific user.
 <hr>
 
 ## 🌐App URL
