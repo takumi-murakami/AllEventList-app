@@ -10,13 +10,11 @@
 
 ## &#x1f58a;Description
 
-前提としてこのアプリケーションは、余分な機能を省き、より直感的に扱えるアプリケーションを目指した為、  一つのサーバーに対して、一つの団体が利用することを想定して開発されています。  
+__前提__  
+このアプリケーションは、ユーザーが直感的に扱えるアプリケーションを目指した為、  一つのサーバーに対して、一つの団体が利用することを想定して開発しました。  
 	
-※余分な機能の定義としては、次のようなユーザーが直感的に操作する事ができない機能を仮定します。
-1. room作成機能   
-	
-	
-予定をシェアし、複数のユーザーが予定に対してコメントをしたり、特定のユーザーのマイページにて予定を確認する事ができます。  
+__機能__
+* 予定をシェアし、複数のユーザーが予定に対してコメントをしたり、特定のユーザーのマイページにて予定を確認する事ができます。  
 <br>
 <br>
 As a premise, this application is developed assuming that one organization will use it for one server because it aims to be an application that can be handled more intuitively by omitting extra functions.  
