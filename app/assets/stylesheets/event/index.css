@@ -247,7 +247,7 @@ header {
   font-family: 'Abril Fatface', cursive;
   font-size: 18px;
   color: #666;
-  text-shadow: -0.3px -1px 1px #808080;
+  /* text-shadow: -0.3px -1px 1px #808080; */
   display: initial;
 }
 
