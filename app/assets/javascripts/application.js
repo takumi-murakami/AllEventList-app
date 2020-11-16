@@ -42,7 +42,7 @@ $(function () {
             // events: '/users/',
             // events: '/users/<%= @user.id %>',
               //カレンダー上部を年月で表示させる
-              titleFormat: 'YYYY年 M月',
+            //   titleFormat: 'YYYY年 M月',
               //曜日を日本語表示
               dayNamesShort: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
               //ボタンのレイアウト
