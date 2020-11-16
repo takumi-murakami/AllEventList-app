@@ -18,6 +18,25 @@
 !/tmp/.keep
 
 /app/*
+/bin/*
+/db/*
+/lib/*
+/config/*
+/test/*
+/vender/*
+/.DS_Store
+/.rspec
+/Gemfile
+/Gemfile.look
+/package.json
+/Rakefile
+/show
+
+!/app/helpers
+!/app/jobs
+!/app/mailers
+
+
 
 # Ignore uploaded files in development
 /storage/*
