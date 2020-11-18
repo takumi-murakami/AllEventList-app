@@ -1,0 +1,52 @@
+<h3 class="output-header">
+Search Result
+<span class="output-header-span">(検索結果)</span>
+</h3>
+
+<table class="schedule-table">
+  <thead class="schedule-thead">
+    <tr>
+      <th class="caption caption-title">Title</th>
+      <th class="caption">Start date</th>
+      <th class="caption">End date</th>
+      <th class="caption">Post user</th>
+      <th class="caption" colspan="3">Button</th>
+    </tr>
+  </thead>
+
+  <tbody class="schedule-tbody">
+    <% if @results.length !=0 %>
+      <% @results.each do |result| %>
+        <tr>
+          <td><%= result.title %></td>
+          <td><%= result.start_date.to_s(:datetime_jp) %></td>
+          <td><%= result.end_date.to_s(:datetime_jp) %></td>
+          <td><%= result.user.name %></td>
+          <td><%= link_to '詳細', event_path(result.id), class:"event-btn" %></td>
+          <% if current_user.id == result.user.id %> 
+            <td><%= link_to '編集', edit_event_path(result.id), class:"event-btn"  %></td>
+            <td><%= link_to '削除', event_path(result.id), class:"event-btn", method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          <% else %>
+            <td><a class="event-btn">-</a>
+            <td><a class="event-btn">-</a>
+          <% end %>  
+        </tr>
+      <% end %>
+    <% end %>
+  </tbody>
+</table>
+
+<div class="actions report-return">
+  <%= link_to "return Top", root_path, class: "return-top" %>
+</div>
+
+<div class="search-address">
+  <h3 class="pad">Search Address</h3>
+</div>
+
+<input
+  id="pac-input"
+  class="controls"
+  type="text"
+  placeholder="Search Box"/>
+<div id="map"></div>

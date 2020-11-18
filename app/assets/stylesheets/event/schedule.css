@@ -1,0 +1,108 @@
+.schedule-table {
+  /* margin-top: 10px; */
+  width: 100%;
+}
+
+thead th {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 14px;
+  background-color: rgb(165, 172, 172);
+  color: white;
+  line-height: center;
+  padding: 0;
+}
+
+.caption {
+  font-family: verdana, arial, helvetica, sans-serif;
+  background-color: rgb(165, 172, 172);
+}
+
+.caption-title {
+  max-width: 20vw;
+}
+
+.schedule-tbody td {
+  padding: 10px 3px;
+  text-align: center;
+}
+
+.schedule-tbody tr {
+  background-color: rgb(228, 224, 224);
+}
+
+.userpage-table {
+  width: 100%;
+}
+
+.userpage-tbody td {
+  padding: 10px 3px;
+  text-align: center;
+}
+
+.userpage-tbody tr {
+  background-color: rgb(228, 224, 224);
+}
+
+.title-text {
+  max-width: 20vw;
+}
+
+.body-text {
+  width: 20vw;
+}
+
+.action-return {
+  margin-top: 30px;
+}
+
+.return-actions {
+  margin-top: 30px;
+}
+
+.return-top {
+  font-family: 'Abril Fatface', cursive;
+  text-decoration: none;
+  font-size: 14px;
+  border-width: 1px;
+  border-style: outset;
+  border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  border-image: initial;
+  background-color: -internal-light-dark(rgb(239, 239, 239), rgb(59, 59, 59));
+  color: -internal-light-dark(black, white);
+  border-radius: 4px;
+  padding: 5px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.return-top:hover {
+  opacity: 0.7;
+  color: #666;
+  background-color: rgb(240, 240, 232);
+}
+
+.report-return {
+  margin-top: 50px;
+}
+
+.user-name {
+  font-size: 17px;
+}
+
+.pad {
+  font-size: 13px;
+}
+
+.search-address {
+  margin-top: 70px;
+}
+
+#pac-input {
+  border: 1px solid rgb(71, 69, 71);
+  height: 38px;
+  margin-top: 10px;
+}
+
+#map {
+  border: 1px solid rgb(71, 69, 71);
+}
