@@ -50,6 +50,7 @@ h1 span {
 header {
   display: flex;
   padding: 0;
+  width: 100%;
   justify-content: space-between;
   margin-bottom: 20px;
 }
@@ -69,7 +70,7 @@ header {
 }
 
 #snippet {
-  font-size: 25px;
+  /* font-size: 25px; */
   line-height: 73px;
   cursor: pointer;
   position: absolute;
@@ -95,7 +96,7 @@ header {
 }
 
 #alert {
-  font-size: 25px;
+  /* font-size: 25px; */
   line-height: 73px;
   cursor: pointer;
   margin-bottom: 80px;
@@ -322,36 +323,28 @@ header {
   transition: opacity 0.4s;
 }
 
-.text-menu {
-  
-}
-
 #identity {
   display: inline-block;
   position: absolute;
   font-size: 20px;
-  /* margin-left: 5px; */
 }
 
 #group {
   display: inline-block;
   position: absolute; 
   font-size: 20px;
-  /* margin-left: 5px; */
 }
 
 #info {
   display: inline-block;
   position: absolute; 
   font-size: 20px;
-  /* margin-left: 5px; */
 }
 
 #drop {
   display: inline-block;
   position: absolute;
   font-size: 20px;
-  margin-left: 20px;
 }
 
 .content.active {
@@ -473,6 +466,19 @@ header {
   font-size: 10px;
 }
 
+@media (min-width: 600px) {
+  #identity {
+    display: none;
+  }
+
+  #group {
+    display: none;
+  }
+
+  #info {
+    display: none;
+  }
+}
 
 @media (max-width: 599px) {
   .title-icon {
@@ -518,17 +524,19 @@ header {
   #identity {
      font-size: 20px;
      text-align: center;
-     position: none;
+     position: static;
   }
    
    #group {
      font-size: 20px;
      text-align: center;
+     position: static;
   }  
   
    #info {
      font-size: 20px;
      text-align: center;
+     position: static;
   }  
 
   #drop {
@@ -588,3 +596,82 @@ header {
 
 }
 
+
+@media (max-width: 428px) {
+  header {
+    margin-bottom: 0;
+    width: 100%;
+  }
+
+  .now-status {
+    font-size: 10px;
+    padding: 0;
+  }
+
+  .tabbar-header {
+    width: 40vw;
+  }
+
+  .report-header {
+    width: 0;
+    padding-left: 9vw;
+    text-align: initial;
+  }
+
+  .alert-header {
+    width: 0;
+    padding-left: 12vw;
+    text-align: initial;
+  }
+
+  .menubar {
+    width: 100%;
+  }
+
+  .content.active {
+    width: 100%;
+  }
+
+  #contact {
+    display: none;
+  }
+
+  tr > th > span {
+    font-size: 10px;
+  }
+
+  .fc-event-container {
+    font-size: 10px;
+    padding: 0;
+  }
+
+  #q_title_eq {
+    height: 30px;
+  }
+
+  input[type="submit" i] {
+    font-size: 12px;
+    padding: 2px
+  }
+
+  .caption {
+    font-size: 8px;
+  }
+
+  .schedule-tbody > tr > td {
+   font-size: 6px;
+  }
+
+  #event_start_date_1i, #event_start_date_2i, #event_start_date_3i, #event_start_date_4i, #event_start_date_5i {
+    font-size: 2px;
+    padding: 5px 0;
+    width: 13vw;
+  }
+
+  #event_end_date_1i, #event_end_date_2i, #event_end_date_3i, #event_end_date_4i, #event_end_date_5i {
+    font-size: 2px;
+    padding: 5px 0;
+    width: 13vw;
+  }
+
+}

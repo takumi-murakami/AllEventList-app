@@ -62,7 +62,7 @@ thead th {
 .return-top {
   font-family: 'Abril Fatface', cursive;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 12px;
   border-width: 1px;
   border-style: outset;
   border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
@@ -70,7 +70,7 @@ thead th {
   background-color: -internal-light-dark(rgb(239, 239, 239), rgb(59, 59, 59));
   color: -internal-light-dark(black, white);
   border-radius: 4px;
-  padding: 5px;
+  padding: 3px;
   cursor: pointer;
   user-select: none;
 }
