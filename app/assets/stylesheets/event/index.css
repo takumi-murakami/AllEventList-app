@@ -56,6 +56,7 @@ header {
 
 .report-header {
   width: 10vw;
+  text-align: center;
 }
 
 .report-header a:hover {
@@ -85,6 +86,7 @@ header {
 
 .alert-header {
   width: 10vw;
+  text-align: center;
 }
 
 .alert-header span {
@@ -304,6 +306,7 @@ header {
   border-radius: 4px 4px 0 0;
   cursor: pointer;
   color: #666;
+  align-items: center;
 }
 
 .menubar li a.active {
@@ -319,9 +322,36 @@ header {
   transition: opacity 0.4s;
 }
 
-#drop {
+.text-menu {
+  
+}
+
+#identity {
+  display: inline-block;
   position: absolute;
   font-size: 20px;
+  /* margin-left: 5px; */
+}
+
+#group {
+  display: inline-block;
+  position: absolute; 
+  font-size: 20px;
+  /* margin-left: 5px; */
+}
+
+#info {
+  display: inline-block;
+  position: absolute; 
+  font-size: 20px;
+  /* margin-left: 5px; */
+}
+
+#drop {
+  display: inline-block;
+  position: absolute;
+  font-size: 20px;
+  margin-left: 20px;
 }
 
 .content.active {
@@ -445,12 +475,17 @@ header {
 
 
 @media (max-width: 599px) {
-  .main-header {
-    height: 100px;
+  .title-icon {
+    position: absolute;
+    top: 40px;
+  }
+
+  .icon-text {
+    text-decoration: none;
   }
 
   .tabbar-header {
-    margin-right: 15px;
+    margin-right: 0px;
   }
 
   .title-icon {
@@ -468,12 +503,33 @@ header {
   .menubar li a{
     width: 15vw;
     font-size: 10px;
+    height: 20px;
     /* background-color: rgb(220, 220, 226); */
   }
 
   .menubar li a.active {
     font-size: 10px;
   }
+
+  .text-menu {
+    display: none;
+  }
+
+  #identity {
+     font-size: 20px;
+     text-align: center;
+     position: none;
+  }
+   
+   #group {
+     font-size: 20px;
+     text-align: center;
+  }  
+  
+   #info {
+     font-size: 20px;
+     text-align: center;
+  }  
 
   #drop {
     display: none;
@@ -520,6 +576,14 @@ header {
   }
   .userpage-thead tr th:nth-child(4) {
     width: 107px;
+  }
+
+  .report-header {
+    width: 15vw;
+  }
+
+  .alert-header {
+    width: 15vw;
   }
 
 }

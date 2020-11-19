@@ -1,9 +1,23 @@
-.main-header {
-  background-image: url(<%= asset_path('calender.jpg') %>);
-  width: 100%;
-  height: 300px;
-  background-size: cover;
-  border: 0.2px solid rgb(240, 240, 232);
-  border-radius: 6px;
-  position: relative;
+@media (min-width: 600px) {
+  .main-header {
+    background-image: url(<%= asset_path('calender.jpg') %>);
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    border: 0.2px solid rgb(240, 240, 232);
+    border-radius: 6px;
+    position: relative;
+  }
+}
+
+@media (max-width: 599px) {
+   .main-header {
+    background-image: url(<%= asset_path('calender.jpg') %>);
+    width: 100%;
+    height: 100px;
+    background-size: cover;
+    border: 0.2px solid rgb(240, 240, 232);
+    border-radius: 6px;
+    position: relative;
+  }
 }
