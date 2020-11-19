@@ -59,7 +59,7 @@ pass: test1234
 
 </div></details>
 <br>
-※１ 最新のGoogle　chromeでの操作を推奨します。
+※１ 最新のGoogle　chromeでの操作を推奨します。<br>
 ※2 レスポンシブに対応していますが、PC環境での操作を推奨します。　
 <hr>
 
