@@ -560,12 +560,20 @@ header {
     font-size: 8px;
   }
 
+  tr > th > span {
+    font-size: 10px;
+  }
+
   .content.active {
     max-width: 41vw;
   }
 
   .caption-title {
     width: 48px;
+  }
+
+  .caption {
+    font-size: 10px;
   }
 
   .schedule-tbody td {
