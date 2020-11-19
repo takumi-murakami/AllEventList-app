@@ -510,7 +510,6 @@ header {
     width: 15vw;
     font-size: 10px;
     height: 20px;
-    /* background-color: rgb(220, 220, 226); */
   }
 
   .menubar li a.active {
@@ -585,13 +584,27 @@ header {
   }
 
   .userpage-thead tr th:nth-child(1) {
-    width: 48px;
-  }
+    width: 10vw;
+  } 
+
+  .userpage-thead tr th:nth-child(2) {
+    width: 15vw;
+  } 
+
   .userpage-thead tr th:nth-child(3) {
-    width: 107px;
+    width: 50vw;
   }
+
   .userpage-thead tr th:nth-child(4) {
-    width: 107px;
+    width: 50vw;
+  }
+
+  .userpage-thead tr th:nth-child(5) {
+    width: 25vw;
+  }
+
+  .userpage-thead tr th:nth-child(6) {
+    width: 25vw;
   }
 
   .report-header {
