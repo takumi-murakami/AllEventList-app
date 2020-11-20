@@ -567,9 +567,9 @@ header {
     max-width: 41vw;
   }
 
-  .caption-title {
+  /* .caption-title {
     width: 48px;
-  }
+  } */
 
   .caption {
     font-size: 10px;
@@ -653,6 +653,10 @@ header {
     width: 100%;
   }
 
+  .content-list {
+    font-size: 6px;
+  }
+
   #contact {
     display: none;
   }
@@ -680,7 +684,15 @@ header {
   }
 
   .schedule-tbody > tr > td {
-   font-size: 6px;
+   font-size: 5px;
+  }
+
+  .fc-day-number {
+    font-size: 6px;
+  }
+
+  span.fc-title {
+    font-size: 6px;
   }
 
   #event_start_date_1i, #event_start_date_2i, #event_start_date_3i, #event_start_date_4i, #event_start_date_5i {
@@ -693,6 +705,20 @@ header {
     font-size: 2px;
     padding: 5px 0;
     width: 13vw;
+  }
+
+  .schedule-thead tr th:nth-child(3) {
+    display: none;
+  }
+  .schedule-thead tr th:nth-child(2) {
+    display: none;
+  }
+
+  .schedule-tbody tr td:nth-child(3) {
+    display: none;
+  }
+  .schedule-tbody tr td:nth-child(2) {
+    display: none;
   }
 
 }
