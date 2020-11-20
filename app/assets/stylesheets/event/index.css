@@ -583,11 +583,11 @@ header {
     font-size: 8px;
   }
 
-  .userpage-thead tr th:nth-child(1) {
+  /* .userpage-thead tr th:nth-child(1) {
     width: 10vw;
-  } 
+  }  */
 
-  .userpage-thead tr th:nth-child(2) {
+  /* .userpage-thead tr th:nth-child(2) {
     width: 15vw;
   } 
 
@@ -605,7 +605,7 @@ header {
 
   .userpage-thead tr th:nth-child(6) {
     width: 25vw;
-  }
+  } */
 
   .report-header {
     width: 15vw;
@@ -718,6 +718,25 @@ header {
     display: none;
   }
   .schedule-tbody tr td:nth-child(2) {
+    display: none;
+  }
+  .userpage-thead tr th:nth-child(5) {
+    display: none;
+  }
+  .userpage-thead tr th:nth-child(2) {
+    display: none;
+  }
+  .userpage-thead tr th:nth-child(4) {
+    display: none;
+  }
+
+  .userpage-tbody tr td:nth-child(5) {
+    display: none;
+  }
+  .userpage-tbody tr td:nth-child(2) {
+    display: none;
+  }
+  .userpage-tbody tr td:nth-child(4) {
     display: none;
   }
 
