@@ -696,13 +696,13 @@ header {
   }
 
   #event_start_date_1i, #event_start_date_2i, #event_start_date_3i, #event_start_date_4i, #event_start_date_5i {
-    font-size: 2px;
+    font-size: 8px;
     padding: 5px 0;
     width: 13vw;
   }
 
   #event_end_date_1i, #event_end_date_2i, #event_end_date_3i, #event_end_date_4i, #event_end_date_5i {
-    font-size: 2px;
+    font-size: 8px;
     padding: 5px 0;
     width: 13vw;
   }
