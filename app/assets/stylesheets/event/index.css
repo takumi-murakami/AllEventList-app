@@ -16,9 +16,10 @@ h1 span {
 }
 
 .title-icon {
+  width: 100%;
   font-family: 'Abril Fatface', cursive;
   font-size: 70px;
-  padding: 5px 12px;
+  /* padding: 5px 12px; */
   margin: 0 auto;
   text-shadow: -2px -3px 3px #808080;
 }
