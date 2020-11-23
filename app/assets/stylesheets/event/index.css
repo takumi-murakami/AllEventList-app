@@ -730,6 +730,9 @@ header {
   .userpage-thead tr th:nth-child(4) {
     display: none;
   }
+  .userpage-thead tr th:nth-child(6) {
+    display: none;
+  }
 
   .userpage-tbody tr td:nth-child(5) {
     display: none;
@@ -740,5 +743,9 @@ header {
   .userpage-tbody tr td:nth-child(4) {
     display: none;
   }
+  .userpage-tbody tr td:nth-child(6) {
+    display: none;
+  }
+
 
 }
