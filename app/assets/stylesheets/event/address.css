@@ -1,3 +1,7 @@
+.userpage-thead tr th:nth-child(6) {
+  padding: 0 5px;
+}
+
 #black-address {
   display: none;
 }
@@ -21,4 +25,8 @@ button:hover {
 
 button:focus {
 	outline:0;
+}
+
+.discription-search {
+  vertical-align: bottom;
 }
