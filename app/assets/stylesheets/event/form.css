@@ -27,6 +27,20 @@
   border-radius: 3px;
 }
 
+#event_address {
+  width: 50vw;
+  border: 0;
+  padding: 10px;
+  font-size: 12px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  border: solid 1px #ccc;
+  margin: 0 0 20px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
 #event_body {
   width: 70vw;
   height: 100px;
