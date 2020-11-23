@@ -28,7 +28,7 @@
           <td class="start-date"><%= event.start_date.to_s(:datetime_jp) %></td>
           <td class="end-date"><%= event.end_date.to_s(:datetime_jp) %></td>
           <td><%= @user.name %></td>
-          <td><button class="btn-input" id="btn"><span class="material-icons">content_copy</span></button>
+          <td><button class="btn-input" id="btn"><span class="material-icons" id="search-address">search</span></button>
             <span class="black-address" id="black-address"><%= event.address %></span>
           </td>
           <td class="show-event"><%= link_to '詳細', event, class:"event-btn" %></td>
