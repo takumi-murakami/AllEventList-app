@@ -25,8 +25,8 @@
         <tr>
           <td class="title-text"><%= event.title %></td>
           <td class="body-text"><%= event.body %></td>
-          <td class="start-date"><%= event.start_date.to_s(:datetime_jp) %></td>
-          <td class="end-date"><%= event.end_date.to_s(:datetime_jp) %></td>
+          <td class="start-date"><%= event.start_date.to_s(:datetime) %></td>
+          <td class="end-date"><%= event.end_date.to_s(:datetime) %></td>
           <td><%= @user.name %></td>
           <td><button class="btn-input" id="btn"><span class="material-icons" id="search-address">search</span></button>
             <span class="black-address" id="black-address"><%= event.address %></span>
