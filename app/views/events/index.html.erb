@@ -160,6 +160,8 @@
     <% else %>
       <li><%= link_to "LogOut", destroy_user_session_path, method: :delete %></li>
       <li><%= link_to "Account", edit_user_path(current_user) %></li>
+      <li><%= link_to "MyPage", user_path(current_user.id) %></li>
+      <li><%= link_to "NewEvent", new_event_path %></li>
     <% end %>
     </ul>
 </div>
