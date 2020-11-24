@@ -25,11 +25,11 @@
 <br>
 <p>
   <strong>Start date:</strong>
-  <%= @event.start_date %>
+  <%= @event.start_date.to_s(:datetime) %>
 </p>
 <p>
   <strong>End date:</strong>
-  <%= @event.end_date %>
+  <%= @event.end_date.to_s(:datetime) %>
 </p>
 
   <br>

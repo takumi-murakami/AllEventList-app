@@ -194,8 +194,8 @@
       <% if @date <= event.start_date %>
         <tr>
           <td class="event-td"><%= event.title %></td>
-          <td><%= event.start_date.to_s(:datetime_jp) %></td>
-          <td><%= event.end_date.to_s(:datetime_jp) %></td>
+          <td><%= event.start_date.to_s(:datetime) %></td>
+          <td><%= event.end_date.to_s(:datetime) %></td>
           <td><%= event.user.name %></td>
           <td><%= link_to '詳細', event, class:"event-btn" %></td>
           <% if current_user.id == event.user.id %>
