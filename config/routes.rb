@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'infomations/index'
   devise_for :users
   root to: "events#index"
   get 'events/search'

@@ -213,6 +213,10 @@ header {
   transition-delay: .4s;
 }
 
+.overlay.show li:nth-child(5) {
+  transition-delay: .5s;
+}
+
 
 .addevent-btn {
   width: 72px;
