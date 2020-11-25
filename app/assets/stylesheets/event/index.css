@@ -41,6 +41,7 @@ h1 span {
 }
 
 .now-status {
+  font-family: 'Abril Fatface', cursive;
   padding: 20px 10px;
   font-size: 14px;
   color: yellowgreen;
