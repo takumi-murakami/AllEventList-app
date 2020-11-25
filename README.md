@@ -122,6 +122,7 @@ __RubyGems__
 | ---------- | ---------- | ----------- |
 | title      | string     | null: false |
 | body       | string     | null: false |
+| address    | string     | null: false |
 | start_date | datetime   | null: false |
 | end_date   | datetime   | null: false |
 | user_id    | references | null: false |
