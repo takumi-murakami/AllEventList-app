@@ -1,61 +1,65 @@
-<p id="notice"><%= notice %></p>
+<div class="main-container">
+  <div class="sub-container">
+    <p id="notice"><%= notice %></p>
 
-<h1 class="show-event-title">Show Event</h1>
+    <h1 class="show-event-title">Show Event</h1>
 
-<p>
-  <strong>Title:</strong>
-  <%= @event.title %>
-</p>
+    <p>
+      <strong>Title:</strong>
+      <%= @event.title %>
+    </p>
 
-<br>
+    <br>
 
-<p class="show-event-body">
-  <strong>Body:</strong>
-  <%= @event.body %>
-</p>
-<br>
-<p class="show-event-address">
-  <strong>Address:</strong>
-  <%= @event.address %>
-</p>
-<br>
-<p>
-  <strong>Start date:</strong>
-  <%= @event.start_date.to_s(:datetime) %>
-</p>
-<p>
-  <strong>End date:</strong>
-  <%= @event.end_date.to_s(:datetime) %>
-</p>
+    <p class="show-event-body">
+      <strong>Body:</strong>
+      <%= @event.body %>
+    </p>
+    <br>
+    <p class="show-event-address">
+      <strong>Address:</strong>
+      <%= @event.address %>
+    </p>
+    <br>
+    <p>
+      <strong>Start date:</strong>
+      <%= @event.start_date.to_s(:datetime) %>
+    </p>
+    <p>
+      <strong>End date:</strong>
+      <%= @event.end_date.to_s(:datetime) %>
+    </p>
 
-  <br>
-  <% if user_signed_in? && current_user.id == @event.user_id %>
-    <%= link_to 'Edit', edit_event_path(@event), class:"show-event-btn edit-btn" %> 
-  <% end %>
+      <br>
+      <% if user_signed_in? && current_user.id == @event.user_id %>
+        <%= link_to 'Edit', edit_event_path(@event), class:"show-event-btn edit-btn" %> 
+      <% end %>
 
- <hr class="line"> 
- <div class="comments">
-      <h4 class="comment-field">＜All comments＞</h4>
-      <% if @comments %>
-        <% @comments.each do |comment| %>
-          <p>
-            <strong><%= link_to comment.user.name, "/users/#{comment.user_id}" %>：</strong>
-            <%= comment.text %>
-          </p>
+    <hr class="line"> 
+    <div class="comments">
+          <h4 class="comment-field">＜All comments＞</h4>
+          <% if @comments %>
+            <% @comments.each do |comment| %>
+              <p>
+                <strong><%= link_to comment.user.name, "/users/#{comment.user_id}" %>：</strong>
+                <%= comment.text %>
+              </p>
+            <% end %>
+          <% end %>
+        </div>
+
+
+      <div class="container">
+        <% if current_user %>
+          <%= form_with(model: [@event, @comment], local: true, class:"comment-form") do |form| %>
+            <%= form.text_area :text, placeholder: "Let's comment!!", rows: "2", class:"comment-form-area" %>
+            <%= form.submit "SEND" %>
+          <% end %>
         <% end %>
-      <% end %>
+      </div>
+
+    <div class="return-actions">
+      <%= link_to "return Top", root_path, class: "return-top " %>
     </div>
-
-
-  <div class="container">
-    <% if current_user %>
-      <%= form_with(model: [@event, @comment], local: true, class:"comment-form") do |form| %>
-        <%= form.text_area :text, placeholder: "Let's comment!!", rows: "2", class:"comment-form-area" %>
-        <%= form.submit "SEND" %>
-      <% end %>
-    <% end %>
   </div>
-
-<div class="return-actions">
-  <%= link_to "return Top", root_path, class: "return-top " %>
 </div>

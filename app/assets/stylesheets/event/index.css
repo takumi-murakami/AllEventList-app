@@ -1,6 +1,8 @@
 .body {
   background-color: rgb(240, 240, 232);
   /* background-color: rgb(209, 201, 209); */
+  padding: 0;
+  margin: 0 3px;
 }
 
 .main-title {

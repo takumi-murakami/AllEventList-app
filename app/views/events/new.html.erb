@@ -1,7 +1,11 @@
-<h1 class="new-event-title">New Event</h1>
+<div class="main-container">
+  <div class="sub-container">
+    <h1 class="new-event-title">New Event</h1>
 
-<%= render 'form', event: @event %>
+    <%= render 'form', event: @event %>
 
-<div class="return-actions">
-  <%= link_to "return Top", root_path, class: "return-top" %>
+    <div class="return-actions">
+      <%= link_to "return Top", root_path, class: "return-top" %>
+    </div>
+  </div>
 </div>
