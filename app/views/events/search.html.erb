@@ -10,6 +10,7 @@ Search Result
       <th class="caption">Start date</th>
       <th class="caption">End date</th>
       <th class="caption">Post user</th>
+      <th class="caption">Address</th>
       <th class="caption" colspan="3">Button</th>
     </tr>
   </thead>
@@ -19,9 +20,12 @@ Search Result
       <% @results.each do |result| %>
         <tr>
           <td><%= result.title %></td>
-          <td><%= result.start_date.to_s(:datetime_jp) %></td>
-          <td><%= result.end_date.to_s(:datetime_jp) %></td>
+          <td><%= result.start_date.to_s(:datetime) %></td>
+          <td><%= result.end_date.to_s(:datetime) %></td>
           <td><%= result.user.name %></td>
+          <td><button class="btn-input" id="btn"><span class="material-icons" id="search-address">search</span></button>
+            <span class="black-address" id="black-address"><%= result.address %></span>
+          </td>
           <td><%= link_to '詳細', event_path(result.id), class:"event-btn" %></td>
           <% if current_user.id == result.user.id %> 
             <td><%= link_to '編集', edit_event_path(result.id), class:"event-btn"  %></td>
@@ -43,6 +47,9 @@ Search Result
 <div class="search-address">
   <h3 class="pad">Search Address</h3>
 </div>
+<h4 class="discription">
+  Click <span class="material-icons discription-search" id="search-address">search</span> to add Search Box
+</h4>
 
 <input
   id="pac-input"
