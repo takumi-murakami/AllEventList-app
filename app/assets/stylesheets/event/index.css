@@ -576,10 +576,6 @@ header {
     max-width: 41vw;
   }
 
-  /* .caption-title {
-    width: 48px;
-  } */
-
   .caption {
     font-size: 10px;
   }
@@ -591,30 +587,6 @@ header {
   .userpage-tbody td {
     font-size: 8px;
   }
-
-  /* .userpage-thead tr th:nth-child(1) {
-    width: 10vw;
-  }  */
-
-  /* .userpage-thead tr th:nth-child(2) {
-    width: 15vw;
-  } 
-
-  .userpage-thead tr th:nth-child(3) {
-    width: 50vw;
-  }
-
-  .userpage-thead tr th:nth-child(4) {
-    width: 50vw;
-  }
-
-  .userpage-thead tr th:nth-child(5) {
-    width: 25vw;
-  }
-
-  .userpage-thead tr th:nth-child(6) {
-    width: 25vw;
-  } */
 
   .report-header {
     width: 15vw;
@@ -666,7 +638,19 @@ header {
     font-size: 10px;
   }
 
-  #contact {
+  /* #contact {
+    display: none;
+  } */
+
+  .new-information {
+    display: none;
+  }
+
+  .grad-wrap {
+    display: none;
+  }
+
+  .info-line {
     display: none;
   }
 
