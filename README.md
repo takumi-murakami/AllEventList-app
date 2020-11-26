@@ -72,20 +72,32 @@ pass: test1234
 <hr>
 
 ## 💻 Demo
-<p align="center">
-トップページ　　<br>  
-  <img src="https://i.gyazo.com/40584bf7ddf948b1e7e94cab09cbc2a4.gif" height="400px;" />
-</p>
+- トップ画面    
+  <img src="https://gyazo.com/46198afb09d394f12e7873ef92bbd00a">
+  <!-- <img src="https://i.gyazo.com/40584bf7ddf948b1e7e94cab09cbc2a4.gif" height="400px;" /> -->
 <br>
 
-<p align="center">
-👔MyPage / 📎Output / 🛎Notifications
-</p>
+<!-- - 👔MyPage / 📎Output / 🛎Notifications -->
+<!-- <img src="https://i.gyazo.com/ea44e602cbab8b211fa7a3df95b1b21b.jpg" height="150px;" >  <img src="https://i.gyazo.com/c5c9389d2e9f434d35a0a4c412eda777.gif"  height="150px;" >  <img src="https://i.gyazo.com/191a57eed7d221e222e7c6da449d67b5.png"  height="150px;" > -->
 
-<p align="center">
-<img src="https://i.gyazo.com/ea44e602cbab8b211fa7a3df95b1b21b.jpg" height="150px;" >  <img src="https://i.gyazo.com/c5c9389d2e9f434d35a0a4c412eda777.gif"  height="150px;" >  <img src="https://i.gyazo.com/191a57eed7d221e222e7c6da449d67b5.png"  height="150px;" >
-</p>
-
+- 予定の新規作成  
+<img src="https://gyazo.com/87ec5231e15be8a470b3cacb5f76a7e2">
+<br>
+- アクティブな予定の一覧  
+<img src="https://gyazo.com/838a6a03fbf118fc1b88b969e02b69c1">
+<br>
+- マイページ・住所検索  
+<img src="https://gyazo.com/59d7df5a942c2f7fbb4f9b546b8ef75f">
+<br>
+- EXCEL形式帳票出力  
+<img src="https://gyazo.com/463caf547b056b73f697c59a1001ed64">
+<br>
+- 通知機能  
+<img src="https://gyazo.com/577620e18a07ead6ae6adec83a44d1fa">
+<br>
+- 予定検索機能  
+<img src="https://gyazo.com/a571cd9e7ca8630ff09123806aee664b">
+<br>
 <hr>
 
 ## 📖 Requirement
