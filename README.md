@@ -79,12 +79,12 @@ pass: test1234
 
 <!-- - 👔MyPage / 📎Output / 🛎Notifications -->
 <!-- <img src="https://i.gyazo.com/ea44e602cbab8b211fa7a3df95b1b21b.jpg" height="150px;" >  <img src="https://i.gyazo.com/c5c9389d2e9f434d35a0a4c412eda777.gif"  height="150px;" >  <img src="https://i.gyazo.com/191a57eed7d221e222e7c6da449d67b5.png"  height="150px;" > -->
-
+[![Image from Gyazo](https://i.gyazo.com/87ec5231e15be8a470b3cacb5f76a7e2.jpg)](https://gyazo.com/87ec5231e15be8a470b3cacb5f76a7e2)
 - 予定の新規作成  
-<img src="https://gyazo.com/87ec5231e15be8a470b3cacb5f76a7e2">
+<img src="https://i.gyazo.com/46198afb09d394f12e7873ef92bbd00a.png">
 <br>
 - アクティブな予定の一覧  
-<img src="https://gyazo.com/838a6a03fbf118fc1b88b969e02b69c1">
+<img src="https://i.gyazo.com/87ec5231e15be8a470b3cacb5f76a7e2.jpg">
 <br>
 - マイページ・住所検索  
 <img src="https://gyazo.com/59d7df5a942c2f7fbb4f9b546b8ef75f">
