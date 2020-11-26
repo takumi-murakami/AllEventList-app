@@ -16,9 +16,6 @@
 
 function address() {
   const btn = document.getElementsByClassName('btn-input');
-  // 全て取得
-  // console.log(btn[1]); //２番目の要素取得
-  // for使って繰り返し処理、保留中
 
     btn[0].addEventListener('click', () => {
       const address = document.getElementsByClassName('black-address')[0];

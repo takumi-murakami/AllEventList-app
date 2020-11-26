@@ -142,6 +142,34 @@ header {
   color: rgb(245, 12, 12);
 }
 
+.clock-header {
+  width: 10vw;
+  text-align: center;
+}
+
+#clock_flame {
+  cursor: pointer;
+  margin-bottom: 80px;
+  width: 10vw;
+  text-align: center;
+}
+
+#clock_time {
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  line-height: 73px;
+}
+
+#clock {
+  display: none;
+  font-size: 25px;
+  font-weight: bold;
+  position: absolute;
+  line-height: 73px;
+
+}
+
 .navbar-header {
   margin-left: auto;
 }
@@ -619,6 +647,12 @@ header {
     width: 15vw;
   }
 
+}
+
+@media (max-width: 1200px) {
+  .clock-header {
+    display: none;
+  }
 }
 
 
