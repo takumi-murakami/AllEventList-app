@@ -1,232 +1,228 @@
-<div class="top-main-container">
-  <div class="sub-container">
-    <%= render "shared/header" %>
-    <p id="notice"><%= notice %></p>
+<%= render "shared/header" %>
+<p id="notice"><%= notice %></p>
 
-      <% if user_signed_in? %>
-        <p class="now-status">You are currently login!!<br>Hello!! <%= current_user.name %>&#x1f60a;</p>
-        <%# <p class="top-infomation"><%=link_to "Information on new features", infomations_index_path %>
-      <% else %>
-        <p class="now-status empty-user">You must be login!!&#x1f622;</p>
-      <% end %>
-    <header>
-      <div class="tabbar-header">
-        <ul class="menubar">
-          <li>
-            <a data-id="about">
-              <span class="text-menu">MyPage</span>
-              <span class="material-icons" id="identity">perm_identity</span>
-              <span class="material-icons" id="drop">arrow_drop_down</span>
-            </a>
-          </li>
-          <li>
-            <a data-id="service">
-              <span class="text-menu">TeamMember</span>
-              <span class="material-icons" id="group">groups</span>
-              <span class="material-icons" id="drop">arrow_drop_down</span>
-            </a>
-          </li>
-          <li>
-            <a data-id="contact">
-              <span class="text-menu">Information</span>
-              <span class="material-icons" id="info">contact_support</span>
-              <span class="material-icons" id="drop">arrow_drop_down</span>
-            </a>
-          </li>
-        </ul>
-
-        <% if user_signed_in? %>
-          <section class="content" id="about">
-            <span class="material-icons" id="cancel-1">close_fullscreen</span>
-            <%= link_to 'MyEventList', user_path(current_user.id), class: "content-list" %>
-          </section>
-          <section class="content" id="service">
-            <span class="material-icons" id="cancel-2">close_fullscreen</span>
-            <% @user.each do |u|%>
-              <span><%= link_to ",,,#{u.name}", user_path(u.id), class: "content-list" %></span>
-            <% end %>
-          </section>
-          <section class="content" id="contact">
-            <span class="material-icons" id="cancel-3">close_fullscreen</span>
-            <%= link_to 'Infomation', infomations_index_path, class: "content-list" %>
-            <hr class="info-line">
-            <br>
-            <div class="grad-wrap">
-              <p class="information">＞＞最新版リリース内容のお知らせ</p>
-              <input id="trigger1" class="grad-trigger" type="checkbox">
-              <label class="grad-btn" for="trigger1">続きを読む</label>
-              <div class="grad-item">
-              平素よりサービス「All Events List」をご利用いただき、誠にありがとうございます。
-              <br>
-              ユーザー様のご意見を参考にアップデートいたしました。<br>
-              以下にて、AllEventsListの追加機能についてご案内いたします。
-              <br>
-              <br>
-              ■リリース日
-              <br>
-              2020年11月23日
-              <br>
-              <br>
-              1.マイページの住所検索機能をアップデートしました。
-              <br>
-              ...検索ボタンを押すとMapの検索窓に反映されるよう変更いたしました。
-              <br>
-              <br>
-              ■リリース日
-              <br>
-              2020年11月18日
-              <br>
-              <br>
-              1. イベント検索機能を実装いたしました。
-              <br>
-              ...Topページの「Search!」ボタンにてタイトル検索が可能になりました。
-              <br>
-              <br>
-              ■リリース日
-              <br>
-              2020年11月02日
-              <br>
-              <br>
-              1. コメントの入力機能を追加いたしました。
-              <br>
-              ...イベント詳細ページにて、コメントを入力します。
-              <br>
-              ...コメントはトップページのアラートボタンに通知されます。
-              <br>
-              ...未読のコメントがある場合、赤い点がつきます。
-              <br>
-              <br>
-              2. 住所検索機能を追加いたしました。
-              <br>
-              ...マイページにて住所の検索が可能になりました。
-              <br>
-              ...「MyPage」、及び「TeamMenber」から、各ページに移動し検索ができます。
-              <br>
-              ...ご訪問先の住所検索などにご利用ください。
-              <br>
-              <br>
-              3. トップページのイベントの表示順が変更になりました。
-              <br>
-              ...今までは、作成したイベント順であったのに対して、<br>イベントの開始時刻(start_date)の昇順に変更いたしました。
-              <br>
-              <br>
-              4. 時間を過ぎたイベントを非表示にいたしました。
-              <br>
-              ...トップページのイベントは時間を過ぎたら非表示になるよう変更いたしました。
-              <br>
-              ...ただし、これまで通りマイページでは全てのイベントが確認できますので、<br>必要に応じて「完了」をクリックして頂くようお願い申し上げます。
-              <br>
-              <br>
-              5. イベントの帳票出力機能を実装いたしました。
-              <br>
-              ...トップページの緑のアイコンから移動し「Commit」ボタンをクリックし保存します。
-              <br>
-              <br>
-              以上、今後も「All Events List」をよろしくお願いいたします。
-              </div>
-            </div>
-          </section>
-        <% end %>
-      </div>
-
-      <% if user_signed_in? %>
-        <div class="report-header">
-          <%= link_to report_path do%>
-            <span class="material-icons" id="snippet">text_snippet</span>
-          <% end %>
-        </div>
-
-        <div class="alert-header">
-          <%= link_to notifications_path do %>
-            <span class="material-icons" id="alert">notification_important</span> 
-            <% @notification.each do |notification| %>
-              <% if (notification.visited_id == current_user.id) && notification.checked == false %>
-                <span class="material-icons" id="on-alert">fiber_manual_record</span>
-                <% break %>
-              <% end %>
-            <% end %>
-          <% end %>
-        </div>
-      <% end %>
-
-      <div class="navbar-header">
-        <span class="material-icons" id="open">menu</span>
-      </div>
-    
-    </header>  
-
-    <div class="overlay">
-      <span class="material-icons" id="close">close</span>
-      <nav>
-        <ul>
-        <% unless user_signed_in? %>
-          <li><%= link_to "SignUp", new_user_registration_path %></li>
-          <li><%= link_to "LogIn", new_user_session_path %></li>
-        <% else %>
-          <li><%= link_to "LogOut", destroy_user_session_path, method: :delete %></li>
-          <li><%= link_to "Account", edit_user_path(current_user) %></li>
-          <li><%= link_to "MyPage", user_path(current_user.id) %></li>
-          <li><%= link_to "NewEvent", new_event_path %></li>
-          <li><%= link_to "Infomation", infomations_index_path %></li>
-        <% end %>
-        </ul>
-    </div>
+  <% if user_signed_in? %>
+    <p class="now-status">You are currently login!!<br>Hello!! <%= current_user.name %>&#x1f60a;</p>
+    <%# <p class="top-infomation"><%=link_to "Information on new features", infomations_index_path %>
+  <% else %>
+    <p class="now-status empty-user">You must be login!!&#x1f622;</p>
+  <% end %>
+<header>
+  <div class="tabbar-header">
+    <ul class="menubar">
+      <li>
+        <a data-id="about">
+          <span class="text-menu">MyPage</span>
+          <span class="material-icons" id="identity">perm_identity</span>
+          <span class="material-icons" id="drop">arrow_drop_down</span>
+        </a>
+      </li>
+      <li>
+        <a data-id="service">
+          <span class="text-menu">TeamMember</span>
+          <span class="material-icons" id="group">groups</span>
+          <span class="material-icons" id="drop">arrow_drop_down</span>
+        </a>
+      </li>
+      <li>
+        <a data-id="contact">
+          <span class="text-menu">Information</span>
+          <span class="material-icons" id="info">contact_support</span>
+          <span class="material-icons" id="drop">arrow_drop_down</span>
+        </a>
+      </li>
+    </ul>
 
     <% if user_signed_in? %>
-      <div id="calendar"></div>
-
-      <div class="search-schedule">
-        <%= search_form_for @e, url: events_search_path do |f| %>
-          <%= f.collection_select :title_eq, @events, :title, :title, include_blank: ' ', class:"search-title" %>
-          <%= f.submit 'Search!', id:"search_data" %>
+      <section class="content" id="about">
+        <span class="material-icons" id="cancel-1">close_fullscreen</span>
+        <%= link_to 'MyEventList', user_path(current_user.id), class: "content-list" %>
+      </section>
+      <section class="content" id="service">
+        <span class="material-icons" id="cancel-2">close_fullscreen</span>
+        <% @user.each do |u|%>
+          <span><%= link_to ",,,#{u.name}", user_path(u.id), class: "content-list" %></span>
         <% end %>
-      </div>
+      </section>
+      <section class="content" id="contact">
+        <span class="material-icons" id="cancel-3">close_fullscreen</span>
+        <%= link_to 'Infomation', infomations_index_path, class: "content-list" %>
+        <hr class="info-line">
+        <br>
+        <div class="grad-wrap">
+          <p class="information">＞＞最新版リリース内容のお知らせ</p>
+          <input id="trigger1" class="grad-trigger" type="checkbox">
+          <label class="grad-btn" for="trigger1">続きを読む</label>
+          <div class="grad-item">
+          平素よりサービス「All Events List」をご利用いただき、誠にありがとうございます。
+          <br>
+          ユーザー様のご意見を参考にアップデートいたしました。<br>
+          以下にて、AllEventsListの追加機能についてご案内いたします。
+          <br>
+          <br>
+          ■リリース日
+          <br>
+          2020年11月23日
+          <br>
+          <br>
+          1.マイページの住所検索機能をアップデートしました。
+          <br>
+          ...検索ボタンを押すとMapの検索窓に反映されるよう変更いたしました。
+          <br>
+          <br>
+          ■リリース日
+          <br>
+          2020年11月18日
+          <br>
+          <br>
+          1. イベント検索機能を実装いたしました。
+          <br>
+          ...Topページの「Search!」ボタンにてタイトル検索が可能になりました。
+          <br>
+          <br>
+          ■リリース日
+          <br>
+          2020年11月02日
+          <br>
+          <br>
+          1. コメントの入力機能を追加いたしました。
+          <br>
+          ...イベント詳細ページにて、コメントを入力します。
+          <br>
+          ...コメントはトップページのアラートボタンに通知されます。
+          <br>
+          ...未読のコメントがある場合、赤い点がつきます。
+          <br>
+          <br>
+          2. 住所検索機能を追加いたしました。
+          <br>
+          ...マイページにて住所の検索が可能になりました。
+          <br>
+          ...「MyPage」、及び「TeamMenber」から、各ページに移動し検索ができます。
+          <br>
+          ...ご訪問先の住所検索などにご利用ください。
+          <br>
+          <br>
+          3. トップページのイベントの表示順が変更になりました。
+          <br>
+          ...今までは、作成したイベント順であったのに対して、<br>イベントの開始時刻(start_date)の昇順に変更いたしました。
+          <br>
+          <br>
+          4. 時間を過ぎたイベントを非表示にいたしました。
+          <br>
+          ...トップページのイベントは時間を過ぎたら非表示になるよう変更いたしました。
+          <br>
+          ...ただし、これまで通りマイページでは全てのイベントが確認できますので、<br>必要に応じて「完了」をクリックして頂くようお願い申し上げます。
+          <br>
+          <br>
+          5. イベントの帳票出力機能を実装いたしました。
+          <br>
+          ...トップページの緑のアイコンから移動し「Commit」ボタンをクリックし保存します。
+          <br>
+          <br>
+          以上、今後も「All Events List」をよろしくお願いいたします。
+          </div>
+        </div>
+      </section>
     <% end %>
+  </div>
 
-    <table class="schedule-table">
-      <% if user_signed_in? %>
-      <thead class="schedule-thead">
-        <tr>
-          <th class="caption caption-title">Title</th>
-          <th class="caption">Start date</th>
-          <th class="caption">End date</th>
-          <th class="caption">Post user</th>
-          <th class="caption" colspan="3">Button</th>
-        </tr>
-      </thead>
-
-      <tbody class="schedule-tbody">
-        <% @events.each do |event| %>
-          <% if @date <= event.start_date %>
-            <tr>
-              <td class="event-td"><%= event.title %></td>
-              <td><%= event.start_date.to_s(:datetime) %></td>
-              <td><%= event.end_date.to_s(:datetime) %></td>
-              <td><%= event.user.name %></td>
-              <td><%= link_to '詳細', event, class:"event-btn" %></td>
-              <% if current_user.id == event.user.id %>
-                <td><%= link_to '編集', edit_event_path(event), class:"event-btn"  %></td>
-                <td><%= link_to '削除', event, class:"event-btn", method: :delete, data: { confirm: 'Are you sure?' } %></td>
-              <% else %>
-                <td><a class="event-btn">-</a>
-                <td><a class="event-btn">-</a>
-              <% end %>
-            </tr>
-          <% end %>
-        <% end %>
-      </tbody>
-    </table>
-
-    <br>
-
-    <div class='addevent-btn'>
-        <%= link_to new_event_path, class: "addevent-btn-text" do %>
-          <p>New Event</p>
-          <span class="material-icons" id="event-icon">add_task</span>
-        <% end %>
+  <% if user_signed_in? %>
+    <div class="report-header">
+      <%= link_to report_path do%>
+        <span class="material-icons" id="snippet">text_snippet</span>
       <% end %>
     </div>
 
-    <%= render "shared/footer" %>
+    <div class="alert-header">
+      <%= link_to notifications_path do %>
+        <span class="material-icons" id="alert">notification_important</span> 
+        <% @notification.each do |notification| %>
+          <% if (notification.visited_id == current_user.id) && notification.checked == false %>
+            <span class="material-icons" id="on-alert">fiber_manual_record</span>
+            <% break %>
+          <% end %>
+        <% end %>
+      <% end %>
+    </div>
+  <% end %>
+
+  <div class="navbar-header">
+    <span class="material-icons" id="open">menu</span>
   </div>
+
+</header>  
+
+<div class="overlay">
+  <span class="material-icons" id="close">close</span>
+  <nav>
+    <ul>
+    <% unless user_signed_in? %>
+      <li><%= link_to "SignUp", new_user_registration_path %></li>
+      <li><%= link_to "LogIn", new_user_session_path %></li>
+    <% else %>
+      <li><%= link_to "LogOut", destroy_user_session_path, method: :delete %></li>
+      <li><%= link_to "Account", edit_user_path(current_user) %></li>
+      <li><%= link_to "MyPage", user_path(current_user.id) %></li>
+      <li><%= link_to "NewEvent", new_event_path %></li>
+      <li><%= link_to "Infomation", infomations_index_path %></li>
+    <% end %>
+    </ul>
 </div>
+
+<% if user_signed_in? %>
+  <div id="calendar"></div>
+
+  <div class="search-schedule">
+    <%= search_form_for @e, url: events_search_path do |f| %>
+      <%= f.collection_select :title_eq, @events, :title, :title, include_blank: ' ', class:"search-title" %>
+      <%= f.submit 'Search!', id:"search_data" %>
+    <% end %>
+  </div>
+<% end %>
+
+<table class="schedule-table">
+  <% if user_signed_in? %>
+  <thead class="schedule-thead">
+    <tr>
+      <th class="caption caption-title">Title</th>
+      <th class="caption">Start date</th>
+      <th class="caption">End date</th>
+      <th class="caption">Post user</th>
+      <th class="caption" colspan="3">Button</th>
+    </tr>
+  </thead>
+
+  <tbody class="schedule-tbody">
+    <% @events.each do |event| %>
+      <% if @date <= event.start_date %>
+        <tr>
+          <td class="event-td"><%= event.title %></td>
+          <td><%= event.start_date.to_s(:datetime) %></td>
+          <td><%= event.end_date.to_s(:datetime) %></td>
+          <td><%= event.user.name %></td>
+          <td><%= link_to '詳細', event, class:"event-btn" %></td>
+          <% if current_user.id == event.user.id %>
+            <td><%= link_to '編集', edit_event_path(event), class:"event-btn"  %></td>
+            <td><%= link_to '削除', event, class:"event-btn", method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          <% else %>
+            <td><a class="event-btn">-</a>
+            <td><a class="event-btn">-</a>
+          <% end %>
+        </tr>
+      <% end %>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<div class='addevent-btn'>
+    <%= link_to new_event_path, class: "addevent-btn-text" do %>
+      <p>New Event</p>
+      <span class="material-icons" id="event-icon">add_task</span>
+    <% end %>
+  <% end %>
+</div>
+
+<%= render "shared/footer" %>
