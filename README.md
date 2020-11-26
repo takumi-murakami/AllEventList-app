@@ -72,13 +72,14 @@ pass: test1234
 <hr>
 
 ## 💻 Demo
-
+<p align="center">
+トップページ　　<br>  
   <img src="https://i.gyazo.com/40584bf7ddf948b1e7e94cab09cbc2a4.gif" height="400px;" />
-
+</p>
 <br>
 
 <p align="center">
- 👔MyPage / 📎Output / 🛎Notifications
+👔MyPage / 📎Output / 🛎Notifications
 </p>
 
 <p align="center">
