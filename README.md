@@ -83,18 +83,23 @@ pass: test1234
 - 予定の新規作成  
 <img src="https://i.gyazo.com/87ec5231e15be8a470b3cacb5f76a7e2.jpg">
 <br>
+
 - アクティブな予定の一覧  
 <img src="https://i.gyazo.com/838a6a03fbf118fc1b88b969e02b69c1.png">
 <br>
+
 - マイページ・住所検索  
 <img src="https://i.gyazo.com/59d7df5a942c2f7fbb4f9b546b8ef75f.gif">
 <br>
+
 - EXCEL形式帳票出力  
 <img src="https://i.gyazo.com/463caf547b056b73f697c59a1001ed64.gif">
 <br>
+
 - 通知機能  
 <img src="https://i.gyazo.com/577620e18a07ead6ae6adec83a44d1fa.gif">
 <br>
+
 - 予定検索機能  
 <img src="https://i.gyazo.com/a571cd9e7ca8630ff09123806aee664b.gif">
 <br>
