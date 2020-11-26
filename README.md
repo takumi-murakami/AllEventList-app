@@ -73,7 +73,7 @@ pass: test1234
 
 ## 💻 Demo
 - トップ画面    
-  <img src="https://i.gyazo.com/46198afb09d394f12e7873ef92bbd00a.png">
+<img src="https://i.gyazo.com/46198afb09d394f12e7873ef92bbd00a.png">
   <!-- <img src="https://i.gyazo.com/40584bf7ddf948b1e7e94cab09cbc2a4.gif" height="400px;" /> -->
 <br>
 
