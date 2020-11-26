@@ -1,61 +1,64 @@
-<%# <%= render "shared/header" %> 
+<div class="main-container">
+  <div class="sub-container">
 
-<div class="show-header">
-  <h3 class="user-name"><%= @user.name %>
-    <span class="pad">'s MyPage</span>
-  </h3>
-</div>
+    <div class="show-header">
+      <h3 class="user-name"><%= @user.name %>
+        <span class="pad">'s MyPage</span>
+      </h3>
+    </div>
 
-<table class="userpage-table">
-  <% if user_signed_in? %>
-  <thead class="userpage-thead">
-    <tr>
-      <th class="caption">Title</th>
-      <th class="caption">Body</th>
-      <th class="caption">Start date</th>
-      <th class="caption">End date</th>
-      <th class="caption">Post user</th>
-      <th class="caption">Address</th>
-      <th class="caption" colspan="3">Button</th>
-    </tr>
-  </thead>
-
-  <tbody class="userpage-tbody">
-    <% @events.each do |event| %>
+    <table class="userpage-table">
+      <% if user_signed_in? %>
+      <thead class="userpage-thead">
         <tr>
-          <td class="title-text"><%= event.title %></td>
-          <td class="body-text"><%= event.body %></td>
-          <td class="start-date"><%= event.start_date.to_s(:datetime) %></td>
-          <td class="end-date"><%= event.end_date.to_s(:datetime) %></td>
-          <td><%= @user.name %></td>
-          <td><button class="btn-input" id="btn"><span class="material-icons" id="search-address">search</span></button>
-            <span class="black-address" id="black-address"><%= event.address %></span>
-          </td>
-          <td class="show-event"><%= link_to '詳細', event, class:"event-btn" %></td>
-          <% if current_user.id == event.user.id %>
-            <td class="edit-event"><%= link_to '編集', edit_event_path(event), class:"event-btn" %></td>
-            <td class="delete-event"><%= link_to '完了', event, class:"event-btn", method: :delete, data: { confirm: 'Do you really want to complete it?' } %></td>
-          <% end %>
+          <th class="caption">Title</th>
+          <th class="caption">Body</th>
+          <th class="caption">Start date</th>
+          <th class="caption">End date</th>
+          <th class="caption">Post user</th>
+          <th class="caption">Address</th>
+          <th class="caption" colspan="3">Button</th>
         </tr>
-    <% end %>
-  </tbody>
-  <% end %>
-</table>
+      </thead>
 
-<div class="actions">
-  <%= link_to "return Top", root_path, class: "return-top" %>
+      <tbody class="userpage-tbody">
+        <% @events.each do |event| %>
+            <tr>
+              <td class="title-text"><%= event.title %></td>
+              <td class="body-text"><%= event.body %></td>
+              <td class="start-date"><%= event.start_date.to_s(:datetime) %></td>
+              <td class="end-date"><%= event.end_date.to_s(:datetime) %></td>
+              <td><%= @user.name %></td>
+              <td><button class="btn-input" id="btn"><span class="material-icons" id="search-address">search</span></button>
+                <span class="black-address" id="black-address"><%= event.address %></span>
+              </td>
+              <td class="show-event"><%= link_to '詳細', event, class:"event-btn" %></td>
+              <% if current_user.id == event.user.id %>
+                <td class="edit-event"><%= link_to '編集', edit_event_path(event), class:"event-btn" %></td>
+                <td class="delete-event"><%= link_to '完了', event, class:"event-btn", method: :delete, data: { confirm: 'Do you really want to complete it?' } %></td>
+              <% end %>
+            </tr>
+        <% end %>
+      </tbody>
+      <% end %>
+    </table>
+
+    <div class="actions">
+      <%= link_to "return Top", root_path, class: "return-top" %>
+    </div>
+
+    <div class="search-address">
+      <h3 class="pad">Search Address</h3>
+    </div>
+    <h4 class="discription">
+      Click <span class="material-icons discription-search" id="search-address">search</span> to add Search Box
+    </h4>
+
+    <input
+      id="pac-input"
+      class="controls"
+      type="text"
+      placeholder="Search Box"/>
+    <div id="map"></div>
+  </div>
 </div>
-
-<div class="search-address">
-  <h3 class="pad">Search Address</h3>
-</div>
-<h4 class="discription">
-  Click <span class="material-icons discription-search" id="search-address">search</span> to add Search Box
-</h4>
-
-<input
-  id="pac-input"
-  class="controls"
-  type="text"
-  placeholder="Search Box"/>
-<div id="map"></div>
