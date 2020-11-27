@@ -155,18 +155,23 @@ header {
 }
 
 #clock_time {
+  display: inline;
+  font-size: 13px;
+  font-weight: bold;
+  position: absolute;
+  line-height: 73px;
+  color: #333;
+  margin-left: 25px;
+}
+
+#clock {
+  display: inline-block;
+  /* display: none; */
   font-size: 20px;
   font-weight: bold;
   position: absolute;
   line-height: 73px;
-}
-
-#clock {
-  display: none;
-  font-size: 25px;
-  font-weight: bold;
-  position: absolute;
-  line-height: 73px;
+  color: #333;
 
 }
 
