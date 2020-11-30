@@ -4,7 +4,6 @@ class CommentsController < ApplicationController
   def create
     @event = Event.find(params[:event_id])
     @comment = @event.comments.build(comment_params)
-    # @comment = current_user.comments.build(comment_params)
     @comment.event_id = params[:event_id]
     @comment.user_id = current_user.id
     @comment_event = @comment.event
@@ -13,11 +12,9 @@ class CommentsController < ApplicationController
     if comment.save
       flash[:success] = 'コメントしました'
       @event = @comment.event
-      # @comment_event.create_notification_comment!(current_user, @comment.id)
       @event.create_notification_comment!(current_user, @comment.id)
       redirect_to "/events/#{comment.event.id}"
     else
-      # comment_get
       render template: 'events/show'
     end
   end
