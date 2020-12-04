@@ -520,6 +520,10 @@ header {
   color: #333;
 }
 
+.event-td {
+  max-width: 20vw;
+}
+
 .footer {
   background-color: rgb(165, 172, 172);
   padding: 10px 0;
