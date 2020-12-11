@@ -1,23 +1,26 @@
-<h2>Edit Account</h2>
+<div class="main-info-container">
+  <div class="sub-container">
+    <h2>Edit Account</h2>
 
-<%= form_with(model: @user, url: user_path) do |f| %>
+    <%= form_with(model: @user, url: user_path) do |f| %>
 
-  <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name, autofocus: true %>
+      <div class="field">
+        <%= f.label :name %><br />
+        <%= f.text_field :name, autofocus: true %>
+      </div>
+
+      <div class="field">
+        <%= f.label :email %><br />
+        <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+      </div>
+
+      <div class="actions">
+        <%= f.submit "Edit" %>
+      </div>
+
+      <div class="actions action-return">
+        <%= link_to "return Top", root_path, class: "return-top" %>
+      </div>
+    <% end %>
   </div>
-
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit "Edit" %>
-  </div>
-
-  <div class="actions action-return">
-    <%= link_to "return Top", root_path, class: "return-top" %>
-  </div>
-
-<% end %>
+</div>
